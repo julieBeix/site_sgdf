@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useQuery } from "react-query";
+
+const getNews = async () => {
+  const response = await fetch("http://localhost:3000/news");
+  return await response.json();
+};
 
 const News = () => {
-  const [News, setNews] = useState<any>("test");
-  useEffect(() => {
-    fetch("http://localhost:3000/news/1")
-      .then((response) => response.json())
-      .then((data) => setNews(JSON.stringify(data)));
-  }, []);
-  return <div className="News">{News}</div>;
+  const query = useQuery("News", getNews);
+  return <div className="News">{JSON.stringify(query.data)}</div>;
 };
 
 export default News;
