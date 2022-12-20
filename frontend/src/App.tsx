@@ -1,9 +1,8 @@
 import { useState } from "react";
-//import News from "./News";
 import { Box, Button, Collapsible, Heading, Grommet } from "grommet";
 import { Notification } from "grommet-icons";
 import { QueryClient, QueryClientProvider } from "react-query";
-import CreateNews from "./CreateNews";
+import CreateArticle from "./Articles/CreateArticle";
 
 const theme = {
   global: {
@@ -52,7 +51,7 @@ function App() {
           </AppBar>
           <Box direction="row" flex overflow={{ horizontal: "hidden" }}>
             <Box flex align="center" justify="center">
-              <CreateNews />
+              <CreateArticle />
             </Box>
             <Collapsible direction="horizontal" open={showSidebar}>
               <Box

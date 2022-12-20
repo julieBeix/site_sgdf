@@ -1,34 +1,24 @@
 import { Box, Button, Form, FormField, TextInput } from "grommet";
 import { useState } from "react";
 import { useMutation } from "react-query";
+import { Article } from "./Article";
 
-const addNews = async (news: NewsItem) => {
-  const response = await fetch("http://localhost:3000/news", {
+const addArticle = async (article: Article) => {
+  const response = await fetch("http://localhost:3000/articles", {
     method: "POST",
-    body: JSON.stringify(news),
+    body: JSON.stringify(article),
   });
   return await response.json();
 };
 
-interface NewsItem {
-  title: string;
-  body: string;
-  author: string;
-}
-
-interface ExistingNews extends NewsItem {
-  id: number;
-  publishDate: Date;
-}
-
-const CreateNews = () => {
-  const mutation = useMutation(addNews);
+const CreateArticle = () => {
+  const mutation = useMutation(addArticle);
   const initialState = { title: "", body: "", author: "" };
-  const [value, setValue] = useState<NewsItem>(initialState);
+  const [value, setValue] = useState<Article>(initialState);
   return (
     <Form
       value={value}
-      onChange={(nextValue: NewsItem) => setValue(nextValue)}
+      onChange={(nextValue: Article) => setValue(nextValue)}
       onReset={() => setValue(initialState)}
       onSubmit={({ value }) => {
         mutation.mutate(value);
@@ -45,4 +35,4 @@ const CreateNews = () => {
   );
 };
 
-export default CreateNews;
+export default CreateArticle;

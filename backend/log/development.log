@@ -1072,3 +1072,8 @@ Processing by NewsController#create as */*
 Completed 204 No Content in 0ms (Allocations: 106)
 
 
+Started POST "/news" for ::1 at 2022-12-20 22:23:34 +0100
+Processing by NewsController#create as */*
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 2219)
+
+
