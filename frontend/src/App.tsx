@@ -1,14 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import News from "./News";
 import { Box, Button, Collapsible, Heading, Grommet } from "grommet";
 import { Notification } from "grommet-icons";
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from "react-query";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 const theme = {
   global: {
