@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/news", to: "news#index"
   get "/news/:id", to: "news#show"
+  post "/news", to: "news#create"
 end

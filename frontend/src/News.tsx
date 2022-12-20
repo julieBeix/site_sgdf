@@ -1,4 +1,4 @@
-import { Button, Card, CardBody, CardFooter, CardHeader, List } from "grommet";
+import { Button, Card, CardBody, CardFooter, CardHeader } from "grommet";
 import { Favorite, ShareOption } from "grommet-icons";
 import { useQuery } from "react-query";
 
@@ -14,10 +14,7 @@ interface NewsItem {
   publishDate: Date;
 }
 
-const NewsCard = (news: NewsItem) => {
-  console.log(news.title);
-  console.log(news.body);
-  console.log(news.author);
+const NewsCard = ({ news }: { news: NewsItem }) => {
   return (
     <Card height="medium" width="medium" background="light-1">
       <CardHeader pad="medium">{news.title}</CardHeader>
@@ -32,8 +29,9 @@ const NewsCard = (news: NewsItem) => {
 
 const News = () => {
   const query = useQuery("News", getNews);
-  console.log(query.data);
-  const newsList = query?.data?.map((news: NewsItem) => NewsCard(news));
+  const newsList = query?.data?.map((news: NewsItem) => {
+    return <NewsCard news={news} key={news.id} />;
+  });
   return (
     <div className="News">
       <ul className="margin-block">{newsList}</ul>
