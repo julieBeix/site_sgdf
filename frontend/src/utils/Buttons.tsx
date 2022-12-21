@@ -1,6 +1,5 @@
 import { Button } from "grommet";
 import { Favorite, Home, ShareOption } from "grommet-icons";
-import { stringify } from "querystring";
 
 export const LikeButton = () => {
   return (
