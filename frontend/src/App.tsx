@@ -3,6 +3,7 @@ import { Box, Button, Collapsible, Heading, Grommet } from "grommet";
 import { Notification } from "grommet-icons";
 import { QueryClient, QueryClientProvider } from "react-query";
 import CreateArticle from "./Articles/CreateArticle";
+import Articles from "./Articles/Articles";
 
 const theme = {
   global: {
@@ -39,32 +40,19 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Grommet theme={theme} full>
-        <Box fill>
-          <AppBar>
-            <Heading level="3" margin="none">
-              Groupe Scouts et Guides de France d'Eaubonne
-            </Heading>
-            <Button
-              icon={<Notification />}
-              onClick={() => setShowSidebar(!showSidebar)}
-            />
-          </AppBar>
-          <Box direction="row" flex overflow={{ horizontal: "hidden" }}>
-            <Box flex align="center" justify="center">
-              <CreateArticle />
-            </Box>
-            <Collapsible direction="horizontal" open={showSidebar}>
-              <Box
-                flex
-                width="medium"
-                background="light-2"
-                elevation="small"
-                align="center"
-                justify="center"
-              >
-                sidebar
-              </Box>
-            </Collapsible>
+        <AppBar>
+          <Heading level="3" margin="none">
+            Groupe Scouts et Guides de France d'Eaubonne
+          </Heading>
+          <Button
+            icon={<Notification />}
+            onClick={() => setShowSidebar(!showSidebar)}
+          />
+        </AppBar>
+        <Box direction="row" flex overflow={{ horizontal: "hidden" }}>
+          <Box flex align="center" justify="center">
+            <Articles />
+            <CreateArticle />
           </Box>
         </Box>
       </Grommet>

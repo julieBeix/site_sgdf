@@ -1,7 +1,7 @@
-import { Button, Card, CardBody, CardFooter, CardHeader } from "grommet";
-import { Favorite, ShareOption } from "grommet-icons";
+import { Card, CardBody, CardFooter, CardHeader } from "grommet";
 import { useQuery } from "react-query";
 import { ExistingArticle } from "./Article";
+import { LikeButton, ReadButton, ShareButton } from "../utils/Buttons";
 
 const getArticles = async () => {
   const response = await fetch("http://localhost:3000/articles");
@@ -11,11 +11,16 @@ const getArticles = async () => {
 const ArticleCard = ({ article }: { article: ExistingArticle }) => {
   return (
     <Card height="medium" width="medium" background="light-1">
-      <CardHeader pad="medium">{article.title}</CardHeader>
+      <CardHeader pad="medium">
+        {article.title}
+        {article.id}
+        <ReadButton id={article.id} />
+      </CardHeader>
       <CardBody pad="medium">{article.body}</CardBody>
       <CardFooter pad={{ horizontal: "small" }} background="light-2">
-        <Button icon={<Favorite color="red" />} hoverIndicator />
-        <Button icon={<ShareOption color="plain" />} hoverIndicator />
+        {article.author}
+        <LikeButton />
+        <ShareButton />
       </CardFooter>
     </Card>
   );

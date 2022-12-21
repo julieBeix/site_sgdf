@@ -4,7 +4,7 @@ import { useMutation } from "react-query";
 import { Article } from "./Article";
 
 const addArticle = async (article: Article) => {
-  const response = await fetch("http://localhost:3000/articles", {
+  const response = await fetch("http://localhost:3000/article", {
     method: "POST",
     body: JSON.stringify(article),
   });

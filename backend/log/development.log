@@ -1077,3 +1077,335 @@ Processing by NewsController#create as */*
 Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 2219)
 
 
+Started GET "/articles" for ::1 at 2022-12-21 00:47:10 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 426)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:47:13 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 195)
+
+
+Started GET "/article/1" for ::1 at 2022-12-21 00:47:16 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 158)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-12-21 00:47:16 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/articles" for ::1 at 2022-12-21 00:47:21 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 248)
+
+
+Started GET "/article/1" for ::1 at 2022-12-21 00:47:34 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 140)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:48:42 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 196)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:49:00 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 193)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:49:54 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 00:49:58 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:50:00 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 191)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:52:20 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:52:48 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:55:45 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:55:47 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 00:55:54 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:55:56 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 1ms (Views: 0.6ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 00:56:14 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:56:19 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:56:19 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 00:56:22 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:56:24 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:56:25 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.3ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 00:56:26 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 0ms (Views: 0.3ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:56:28 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:57:25 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:58:22 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:58:42 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 00:58:45 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:58:47 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:58:47 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 00:58:48 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:58:50 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:58:50 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 00:58:51 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:58:52 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:58:52 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:59:09 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:59:53 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 00:59:55 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 01:00:06 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:00:11 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:00:11 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:00:52 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:02:32 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 01:02:35 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:02:41 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:02:41 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:03:25 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:03:32 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 01:03:33 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:03:44 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:03:44 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 01:03:51 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 136)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 01:04:29 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:04:32 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:04:32 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:04:32 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 01:04:34 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 136)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 01:04:39 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 0ms (Views: 0.3ms | Allocations: 136)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:04:43 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/articles" for ::1 at 2022-12-21 01:04:43 +0100
+Processing by NewsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 190)
+
+
+Started GET "/article/[object%20Object]" for ::1 at 2022-12-21 01:04:47 +0100
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"[object Object]"}
+Completed 200 OK in 2ms (Views: 0.7ms | Allocations: 136)
+
+
