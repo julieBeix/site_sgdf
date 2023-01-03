@@ -27,6 +27,12 @@ const CreateArticle = () => {
       <FormField name="title" htmlFor="text-input-id" label="Title">
         <TextInput id="text-input-id" name="title" />
       </FormField>
+      <FormField name="body" htmlFor="text-input-id" label="Body">
+        <TextInput id="text-input-id" name="body" />
+      </FormField>
+      <FormField name="author" htmlFor="text-input-id" label="Author">
+        <TextInput id="text-input-id" name="author" />
+      </FormField>
       <Box direction="row" gap="medium">
         <Button type="submit" primary label="Submit" />
         <Button type="reset" label="Reset" />

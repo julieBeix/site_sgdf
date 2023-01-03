@@ -35,6 +35,6 @@
 /config/master.key
 
 
-
+/backend/tmp
 
 vendor/
