@@ -11,15 +11,27 @@ export const ShareButton = () => {
   return <Button icon={<ShareOption color="plain" />} hoverIndicator />;
 };
 
-export const ReadButton = (id: { id: number }) => {
+export const ReadArticleButton = ({ id }: { id: number }) => {
   return (
     <Button
       icon={<Home color="plain" />}
       hoverIndicator
       onClick={() => {
         console.log(id);
-        const url = "http://localhost:3000/article/" + id.toString();
+        const url = "http://localhost:3001/article/" + id.toString();
         console.log(url);
+        window.location.href = url;
+      }}
+    />
+  );
+};
+
+export const BackButton = ({ url }: { url: string }) => {
+  return (
+    <Button
+      icon={<Home color="blue" />}
+      hoverIndicator
+      onClick={() => {
         window.location.href = url;
       }}
     />
