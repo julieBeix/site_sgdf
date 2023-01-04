@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get "/articles", to: "articles#index"
   get "/article/:id", to: "articles#show"
   post "/article", to: "articles#create"
+  delete "admin/article/", to: "articles#delete"
+  put "admin/article/:id", to: "articles#modify"
 end

@@ -9,7 +9,12 @@ class ArticlesController < ApplicationController
 
   def create
     parsed_body = JSON.parse(request.body.read)
-    puts parsed_body
     Article.create(title: parsed_body['title'], body: parsed_body['body'], author: parsed_body['author'])
+  end
+
+  def delete
+    parsed_body = JSON.parse(request.body.read)
+    puts parsed_body
+    Article.destroy(parsed_body)
   end
 end

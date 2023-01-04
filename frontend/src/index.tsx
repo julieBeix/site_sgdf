@@ -3,8 +3,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AdminPage from "./Admin/AdminPage";
 import App from "./App";
 import DisplayArticle from "./Articles/DisplayArticle";
+import ModifyArticle from "./Articles/ModifyArticle";
 import reportWebVitals from "./reportWebVitals";
 
 const router = createBrowserRouter([
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
   {
     path: "/article/:id",
     element: <DisplayArticle />,
+  },
+  {
+    path: "/admin",
+    element: <AdminPage />,
+  },
+  {
+    path: "/admin/article/:id",
+    element: <ModifyArticle />,
   },
 ]);
 
