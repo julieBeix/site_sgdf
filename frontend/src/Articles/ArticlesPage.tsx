@@ -27,7 +27,7 @@ const ArticleCard = ({ article }: { article: ExistingArticle }) => {
 };
 
 const ArticlesPage = () => {
-  const query = useQuery("Articles", getArticles);
+  const query = useQuery(["Articles"], getArticles);
   const articleList = query?.data?.map((article: ExistingArticle) => {
     return <ArticleCard article={article} key={article.id} />;
   });

@@ -13,8 +13,6 @@ class ArticlesController < ApplicationController
   end
 
   def delete
-    parsed_body = JSON.parse(request.body.read)
-    puts parsed_body
-    Article.destroy(parsed_body)
+    Article.destroy(params[:id].to_i)
   end
 end

@@ -28,7 +28,7 @@ const getArticles = async () => {
 };
 
 const AdminPage = () => {
-  const query = useQuery("Articles", getArticles);
+  const query = useQuery(["Articles"], getArticles);
   const articleList = query?.data?.map((article: ExistingArticle) => {
     return <ArticleLigne article={article} key={article.id} />;
   });

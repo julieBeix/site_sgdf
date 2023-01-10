@@ -1,20 +1,25 @@
 import { Box, Button, Form, FormField, TextInput } from "grommet";
 import { useState } from "react";
-import { useMutation } from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 import { Article } from "./Article";
 
 const addArticle = async (article: Article) => {
-  const response = await fetch("http://localhost:3000/article", {
+  await fetch("http://localhost:3000/article", {
     method: "POST",
     body: JSON.stringify(article),
   });
-  return await response.json();
 };
 
 const CreateArticle = () => {
-  const mutation = useMutation(addArticle);
   const initialState = { title: "", body: "", author: "" };
   const [value, setValue] = useState<Article>(initialState);
+  const client = useQueryClient();
+  const mutation = useMutation(addArticle, {
+    onSuccess: () => {
+      client.invalidateQueries(["Articles"]);
+      setValue(initialState);
+    },
+  });
   return (
     <Form
       value={value}
