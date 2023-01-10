@@ -1,20 +1,25 @@
 import { Box, Button, Form, FormField, TextInput } from "grommet";
 import { useState } from "react";
-import { useMutation } from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 import { Article } from "./Article";
 
 const addArticle = async (article: Article) => {
-  const response = await fetch("http://localhost:3000/article", {
+  await fetch("http://localhost:3000/article", {
     method: "POST",
     body: JSON.stringify(article),
   });
-  return await response.json();
 };
 
 const CreateArticle = () => {
-  const mutation = useMutation(addArticle);
   const initialState = { title: "", body: "", author: "" };
   const [value, setValue] = useState<Article>(initialState);
+  const client = useQueryClient();
+  const mutation = useMutation(addArticle, {
+    onSuccess: () => {
+      client.invalidateQueries(["Articles"]);
+      setValue(initialState);
+    },
+  });
   return (
     <Form
       value={value}
@@ -26,6 +31,12 @@ const CreateArticle = () => {
     >
       <FormField name="title" htmlFor="text-input-id" label="Title">
         <TextInput id="text-input-id" name="title" />
+      </FormField>
+      <FormField name="body" htmlFor="text-input-id" label="Body">
+        <TextInput id="text-input-id" name="body" />
+      </FormField>
+      <FormField name="author" htmlFor="text-input-id" label="Author">
+        <TextInput id="text-input-id" name="author" />
       </FormField>
       <Box direction="row" gap="medium">
         <Button type="submit" primary label="Submit" />
