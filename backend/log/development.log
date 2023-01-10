@@ -4894,3 +4894,386 @@ Processing by ArticlesController#index as */*
 Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 2009)
 
 
+Started GET "/articles" for ::1 at 2023-01-10 15:40:57 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 2151)
+
+
+Started GET "/articles" for ::1 at 2023-01-10 15:41:01 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 2009)
+
+
+Started GET "/articles" for ::1 at 2023-01-10 15:41:02 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 2009)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:41:04 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 674)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:41:47 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:41:51 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:44:05 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:44:09 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:45:37 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:46:34 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:46:46 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:47:06 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:47:49 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:47:52 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:48:06 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:48:07 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:51:21 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:51:25 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:53:20 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:53:51 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:55:04 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:56:03 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:56:32 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:56:34 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:56:43 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started PUT "/article15" for ::1 at 2023-01-10 15:56:47 +0100
+  
+ActionController::RoutingError (No route matches [PUT] "/article15"):
+  
+Started GET "/article/15" for ::1 at 2023-01-10 15:57:10 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/article/15" for ::1 at 2023-01-10 15:59:56 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 3744)
+
+
+Started DELETE "/article/15" for ::1 at 2023-01-10 15:59:59 +0100
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mArticle Destroy (0.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+Completed 204 No Content in 3ms (ActiveRecord: 1.6ms | Allocations: 2015)
+
+
+Started GET "/articles" for ::1 at 2023-01-10 15:59:59 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1946)
+
+
+Started GET "/article/16" for ::1 at 2023-01-10 16:00:04 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 640)
+
+
+Started PUT "/article/16" for ::1 at 2023-01-10 16:00:11 +0100
+Processing by ArticlesController#modify as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:21:in `modify'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mArticle Update (0.8ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "body" = ?, "author" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "toto"], ["body", "tata"], ["author", "titi"], ["updated_at", "2023-01-10 15:00:11.863097"], ["id", 16]]
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+Completed 204 No Content in 8ms (ActiveRecord: 2.2ms | Allocations: 2481)
+
+
+Started GET "/articles" for ::1 at 2023-01-10 16:00:20 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1887)
+
+
+Started GET "/articles" for ::1 at 2023-01-10 16:04:36 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1888)
+
+
+Started GET "/articles" for ::1 at 2023-01-10 16:04:38 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1887)
+
+
+Started GET "/article/17" for ::1 at 2023-01-10 16:04:40 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started PUT "/article/17" for ::1 at 2023-01-10 16:04:57 +0100
+Processing by ArticlesController#modify as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:21:in `modify'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mArticle Update (0.6ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "body" = ?, "author" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "bonsoir"], ["body", "soupe à la tomate"], ["author", "Picasso"], ["updated_at", "2023-01-10 15:04:57.130432"], ["id", 17]]
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+Completed 204 No Content in 5ms (ActiveRecord: 2.2ms | Allocations: 2260)
+
+
+Started GET "/article/17" for ::1 at 2023-01-10 16:04:57 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/articles" for ::1 at 2023-01-10 16:04:57 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1887)
+
+
+Started DELETE "/article/16" for ::1 at 2023-01-10 16:05:28 +0100
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mArticle Destroy (0.8ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+Completed 204 No Content in 8ms (ActiveRecord: 3.2ms | Allocations: 1928)
+
+
+Started GET "/articles" for ::1 at 2023-01-10 16:05:28 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/article/18" for ::1 at 2023-01-10 16:05:59 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started PUT "/article/18" for ::1 at 2023-01-10 16:06:16 +0100
+Processing by ArticlesController#modify as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:21:in `modify'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mArticle Update (0.8ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "author" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "Albion"], ["author", "Affleloutre"], ["updated_at", "2023-01-10 15:06:16.353811"], ["id", 18]]
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+Completed 204 No Content in 8ms (ActiveRecord: 3.1ms | Allocations: 2257)
+
+
+Started GET "/article/18" for ::1 at 2023-01-10 16:06:16 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/articles" for ::1 at 2023-01-10 16:06:16 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles" for ::1 at 2023-01-10 16:06:28 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1765)
+
+

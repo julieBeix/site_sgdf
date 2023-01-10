@@ -15,4 +15,10 @@ class ArticlesController < ApplicationController
   def delete
     Article.destroy(params[:id].to_i)
   end
+
+  def modify
+    parsed_body = JSON.parse(request.body.read)
+    article = Article.find(params[:id].to_i)
+    article.update(title: parsed_body['title'], body: parsed_body['body'], author: parsed_body['author'])
+  end
 end

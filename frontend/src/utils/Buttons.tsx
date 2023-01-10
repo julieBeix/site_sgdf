@@ -20,9 +20,7 @@ export const ReadArticleButton = ({ id }: { id: number }) => {
       icon={<Home color="plain" />}
       hoverIndicator
       onClick={() => {
-        console.log(id);
         const url = "http://localhost:3001/article/" + id.toString();
-        console.log(url);
         window.location.href = url;
       }}
     />
