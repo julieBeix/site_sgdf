@@ -2,7 +2,7 @@ import { Button } from "grommet";
 import { Favorite, Home, ShareOption } from "grommet-icons";
 import { AiFillDelete } from "react-icons/ai";
 import { BsFillPencilFill } from "react-icons/bs";
-import { QueryClient, useMutation, useQueryClient } from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 
 export const LikeButton = () => {
   return (
@@ -57,9 +57,7 @@ export const ModifyButton = ({ id }: { id: number }) => {
       icon={<BsFillPencilFill color="plain" />}
       hoverIndicator
       onClick={() => {
-        console.log(id);
         const url = "http://localhost:3001/admin/article/" + id.toString();
-        console.log(url);
         window.location.href = url;
       }}
     />

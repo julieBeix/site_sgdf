@@ -10,7 +10,6 @@ const getArticle = async (id: string = "1") => {
 
 const DisplayArticle = () => {
   const { id } = useParams();
-  console.log(id);
   const { data } = useQuery(["Article", id], () => getArticle(id));
 
   return (

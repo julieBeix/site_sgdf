@@ -4,7 +4,6 @@ import { ExistingArticle } from "../Articles/Article";
 import { DeleteButton, ModifyButton } from "../utils/Buttons";
 
 const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
-  console.log(article);
   return (
     <TableRow>
       <TableCell>{article.id}</TableCell>
