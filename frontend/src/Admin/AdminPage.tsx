@@ -2,6 +2,7 @@ import { Table, TableBody, TableCell, TableHeader, TableRow } from "grommet";
 import { useQuery } from "react-query";
 import { ExistingArticle } from "../Articles/Article";
 import { DeleteButton, ModifyButton } from "../utils/Buttons";
+import { AdminAppBar } from "./AdminAppBar";
 
 const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
   return (
@@ -32,22 +33,25 @@ const AdminPage = () => {
     return <ArticleLigne article={article} key={article.id} />;
   });
   return (
-    <Table>
-      <TableHeader>
-        <TableRow>
-          <TableCell scope="col" border="bottom">
-            ID
-          </TableCell>
-          <TableCell scope="col" border="bottom">
-            Title
-          </TableCell>
-          <TableCell scope="col" border="bottom">
-            Author
-          </TableCell>
-        </TableRow>
-      </TableHeader>
-      <TableBody>{articleList}</TableBody>
-    </Table>
+    <div>
+      <AdminAppBar />
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableCell scope="col" border="bottom">
+              ID
+            </TableCell>
+            <TableCell scope="col" border="bottom">
+              Title
+            </TableCell>
+            <TableCell scope="col" border="bottom">
+              Author
+            </TableCell>
+          </TableRow>
+        </TableHeader>
+        <TableBody>{articleList}</TableBody>
+      </Table>
+    </div>
   );
 };
 
