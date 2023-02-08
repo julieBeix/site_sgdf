@@ -1,4 +1,4 @@
-import { PublicAppBar } from "../utils/PublicAppBar";
+import { PublicAppBar } from "./PublicAppBar";
 
 export const PublicHomePage = () => {
   return <PublicAppBar />;

@@ -1,16 +1,11 @@
 import { Page, PageContent, Paragraph } from "grommet";
-import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
 import { BackButton } from "../utils/Buttons";
-
-const getArticle = async (id: string = "1") => {
-  const response = await fetch("http://localhost:3000/article/" + id);
-  return await response.json();
-};
+import { useArticlesShow } from "./hooks/useArticles";
 
 const DisplayArticle = () => {
   const { id } = useParams();
-  const { data } = useQuery(["Article", id], () => getArticle(id));
+  const { data } = useArticlesShow(id);
 
   return (
     <Page kind="wide">

@@ -1,7 +1,7 @@
 import { Box } from "grommet";
 import CreateArticle from "./CreateArticle";
 import ArticlesList from "./ArticlesList";
-import { PublicAppBar } from "../utils/PublicAppBar";
+import { PublicAppBar } from "../public/PublicAppBar";
 
 function ArticlesPage() {
   return (

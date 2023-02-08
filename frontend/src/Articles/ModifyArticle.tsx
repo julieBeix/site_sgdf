@@ -1,37 +1,18 @@
 import { Box, Button, Form, FormField, TextInput } from "grommet";
 import { useEffect, useState } from "react";
-import { useMutation, useQuery, useQueryClient } from "react-query";
 import { useParams } from "react-router-dom";
 import { Article } from "./Article";
-
-const getArticle = async (id: string = "1") => {
-  const response = await fetch("http://localhost:3000/article/" + id);
-  return await response.json();
-};
-
-const updateArticle = async ({
-  article,
-  id,
-}: {
-  article: Article;
-  id: string;
-}) => {
-  await fetch("http://localhost:3000/article/" + id, {
-    method: "PUT",
-    body: JSON.stringify(article),
-  });
-};
+import { useArticlesModify, useArticlesShow } from "./hooks/useArticles";
 
 const ModifyArticle = () => {
   const { id } = useParams();
-  const { data, isLoading } = useQuery(["Article", id], () => getArticle(id));
+  const { data, isLoading } = useArticlesShow(id);
   const initialState = {
     title: "",
     body: "",
     author: "",
   };
   const [value, setValue] = useState<Article>(initialState);
-  const client = useQueryClient();
   useEffect(() => {
     setValue({
       title: data?.title,
@@ -39,12 +20,7 @@ const ModifyArticle = () => {
       author: data?.author,
     });
   }, [data]);
-  const mutation = useMutation(updateArticle, {
-    onSuccess: () => {
-      client.invalidateQueries(["Article", id]);
-      window.location.href = "http://localhost:3001/admin";
-    },
-  });
+  const mutation = useArticlesModify(id);
   if (!id) return <div />;
   return (
     <Form

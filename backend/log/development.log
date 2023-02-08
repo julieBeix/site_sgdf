@@ -5942,3 +5942,1671 @@ Processing by ArticlesController#index as */*
 Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1887)
 
 
+Started POST "/accountCred" for ::1 at 2023-01-15 17:50:12 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/accountCred"):
+  
+Started POST "/accountCred" for ::1 at 2023-01-15 17:50:54 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/accountCred"):
+  
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAccountCreds (20230115165340)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "account_creds" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230115165340"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAccountCred Create (0.6ms)[0m  [1m[32mINSERT INTO "account_creds" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "toto@email.com"], ["password", "[FILTERED]"], ["created_at", "2023-01-15 17:14:12.740918"], ["updated_at", "2023-01-15 17:14:12.740918"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAccountCred Load (0.4ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds"[0m
+Started PUT "/connection" for ::1 at 2023-01-15 18:22:10 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant AccountCredController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  AccountCredsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started PUT "/connection" for ::1 at 2023-01-15 18:23:38 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant AccountCredController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  AccountCredsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started PUT "/connection" for ::1 at 2023-01-15 18:23:56 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [PUT] "/connection"):
+  
+Started POST "/connection" for ::1 at 2023-01-15 18:24:14 +0100
+  
+ActionController::RoutingError (uninitialized constant AccountCredController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  AccountCredsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/connection" for ::1 at 2023-01-15 18:25:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/connection"):
+  
+Started GET "/favicon.ico" for ::1 at 2023-01-15 18:25:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/connection" for ::1 at 2023-01-15 18:25:55 +0100
+  
+ActionController::RoutingError (uninitialized constant AccountCredController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  AccountCredsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started POST "/connection" for ::1 at 2023-01-15 18:29:53 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant AccountCredController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  AccountCredsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started POST "/connection" for ::1 at 2023-01-15 18:30:50 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccountCredsController#verify as */*
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 2884)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: account_cred):
+  
+app/controllers/account_creds_controller.rb:61:in `account_cred_params'
+app/controllers/account_creds_controller.rb:43:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:31:26 +0100
+Processing by AccountCredsController#verify as */*
+Completed 400 Bad Request in 0ms (Allocations: 256)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: account_cred):
+  
+app/controllers/account_creds_controller.rb:61:in `account_cred_params'
+app/controllers/account_creds_controller.rb:42:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:31:51 +0100
+Processing by AccountCredsController#verify as */*
+Completed 400 Bad Request in 0ms (Allocations: 257)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: account_cred):
+  
+app/controllers/account_creds_controller.rb:62:in `account_cred_params'
+app/controllers/account_creds_controller.rb:43:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:32:17 +0100
+Processing by AccountCredsController#verify as */*
+Completed 400 Bad Request in 1ms (Allocations: 717)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: account_cred):
+  
+app/controllers/account_creds_controller.rb:62:in `account_cred_params'
+app/controllers/account_creds_controller.rb:44:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:32:46 +0100
+Processing by AccountCredsController#verify as */*
+Completed 400 Bad Request in 1ms (Allocations: 714)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: account_cred):
+  
+app/controllers/account_creds_controller.rb:62:in `account_cred_params'
+app/controllers/account_creds_controller.rb:44:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:33:30 +0100
+Processing by AccountCredsController#verify as */*
+Completed 400 Bad Request in 1ms (Allocations: 738)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: account_cred):
+  
+app/controllers/account_creds_controller.rb:63:in `account_cred_params'
+app/controllers/account_creds_controller.rb:45:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:34:47 +0100
+Processing by AccountCredsController#verify as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2285)
+
+
+  
+NoMethodError (undefined method `email' for {"email"=>"a", "password"=>"b"}:Hash
+
+    account_cred = AccountCred.find_by(email: parsed_body.email)
+                                                         ^^^^^^):
+  
+app/controllers/account_creds_controller.rb:43:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:34:56 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 3807)
+
+
+  
+NoMethodError (undefined method `count' for nil:NilClass
+
+    if account_cred.count == 0
+                   ^^^^^^):
+  
+app/controllers/account_creds_controller.rb:44:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:35:21 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.0ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 3043)
+
+
+  
+NoMethodError (undefined method `count' for nil:NilClass
+
+    if account_cred.count == 0
+                   ^^^^^^):
+  
+app/controllers/account_creds_controller.rb:45:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:35:54 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.0ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 3069)
+
+
+  
+NoMethodError (undefined method `count' for nil:NilClass
+
+    if account_cred.count == 0
+                   ^^^^^^):
+  
+app/controllers/account_creds_controller.rb:49:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:36:11 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.0ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 500 Internal Server Error in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 3264)
+
+
+  
+NoMethodError (undefined method `password' for nil:NilClass
+
+    if account_cred.password != parsed_body['password']
+                   ^^^^^^^^^):
+  
+app/controllers/account_creds_controller.rb:52:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:36:30 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.0ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2139)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 18:36:47 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.3ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 401 Unauthorized in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4127)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 18:37:35 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.0ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3368)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 18:37:43 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1667)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass
+
+    render josn: @account_cred.id, status: :accepted
+                              ^^^):
+  
+app/controllers/account_creds_controller.rb:57:in `verify'
+Started POST "/connection" for ::1 at 2023-01-15 18:37:58 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.0ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3428)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 18:42:04 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.0ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3395)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 18:48:44 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 4ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 700)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 18:52:00 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 539)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 18:52:56 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.0ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3413)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 18:54:30 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 571)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 18:56:36 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 548)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 18:57:02 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 550)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 18:59:43 +0100
+  
+SyntaxError (/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+      render json {status: "not_found"}, status: :not_f...
+                         ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+...nder json {status: "not_found"}, status: :not_found
+...                              ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+      render json {status: "unauthorized"}, status: :un...
+                         ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+...r json {status: "unauthorized"}, status: :unauthorized
+...                              ^
+):
+  
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+Started POST "/connection" for ::1 at 2023-01-15 19:00:20 +0100
+  
+SyntaxError (/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+      render json {status: "not_found"}, status: :not_f...
+                         ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+...nder json {status: "not_found"}, status: :not_found
+...                              ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+      render json {status: "unauthorized"}, status: :un...
+                         ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+...r json {status: "unauthorized"}, status: :unauthorized
+...                              ^
+):
+  
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+Started POST "/connection" for ::1 at 2023-01-15 19:01:14 +0100
+  
+SyntaxError (/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+      render json {status: 'not_found'}, status: :not_f...
+                         ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+...nder json {status: 'not_found'}, status: :not_found
+...                              ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+      render json {status: 'unauthorized'}, status: :un...
+                         ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+...r json {status: 'unauthorized'}, status: :unauthorized
+...                              ^
+):
+  
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+Started POST "/connection" for ::1 at 2023-01-15 19:01:45 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+      render json {status: 'not_found'}, status: :not_f...
+                         ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+...nder json {status: 'not_found'}, status: :not_found
+...                              ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+      render json {status: 'unauthorized'}, status: :un...
+                         ^
+/Users/juliebeix/Desktop/site_sgdf/backend/app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+...r json {status: 'unauthorized'}, status: :unauthorized
+...                              ^
+):
+  
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:46: syntax error, unexpected '}', expecting `end'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected ':', expecting '}'
+app/controllers/account_creds_controller.rb:50: syntax error, unexpected '}', expecting `end'
+Started POST "/connection" for ::1 at 2023-01-15 19:02:00 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 7ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 5130)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:02:31 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 12ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 5061)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:03:50 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 659)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:06:44 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 561)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:08:51 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 562)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:09:15 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:11:24 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:21:18 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 714)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:21:19 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:21:20 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:21:21 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 556)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:22:03 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:22:17 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:24:16 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:24:18 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:24:31 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:24:55 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:26:29 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:28:42 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:28:54 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:29:23 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:35:38 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 4ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 699)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:36:11 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:36:58 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:38:01 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:38:12 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:38:55 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:40:44 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:42:23 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 401 Unauthorized in 3ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 554)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:42:29 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 541)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:53:38 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 694)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:53:53 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.3ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-15 19:54:17 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (1.7ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 4ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-17 15:05:54 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.5ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "aa"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4999)
+
+
+Started POST "/connection" for ::1 at 2023-01-17 15:06:34 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 10ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 5056)
+
+
+Started POST "/connection" for ::1 at 2023-01-17 15:06:48 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 659)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:10:48 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 13ms (Views: 3.3ms | ActiveRecord: 0.9ms | Allocations: 5582)
+
+
+Started GET "/article/17" for ::1 at 2023-01-17 15:10:52 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started PUT "/article/17" for ::1 at 2023-01-17 15:11:04 +0100
+Processing by ArticlesController#modify as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:21:in `modify'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mArticle Update (1.1ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "bonjour"], ["updated_at", "2023-01-17 14:11:04.262328"], ["id", 17]]
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+Completed 204 No Content in 6ms (ActiveRecord: 2.1ms | Allocations: 2799)
+
+
+Started GET "/article/17" for ::1 at 2023-01-17 15:11:04 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:11:04 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1887)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:11:20 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1900)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:11:21 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1887)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:12:55 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1887)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:12:55 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1887)
+
+
+Started POST "/connection" for ::1 at 2023-01-17 15:15:48 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 566)
+
+
+Started POST "/connection" for ::1 at 2023-01-17 15:16:14 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-17 15:24:59 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (1.0ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 8ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 743)
+
+
+Started POST "/connection" for ::1 at 2023-01-17 15:25:09 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 5ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-17 15:27:58 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.1ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 559)
+
+
+Started POST "/connection" for ::1 at 2023-01-17 15:34:38 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.7ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 404 Not Found in 3ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 683)
+
+
+Started POST "/connection" for ::1 at 2023-01-17 15:34:46 +0100
+Processing by AccountCredsController#verify as */*
+  [1m[36mAccountCred Load (0.2ms)[0m  [1m[34mSELECT "account_creds".* FROM "account_creds" WHERE "account_creds"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/account_creds_controller.rb:43:in `verify'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 562)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:36:48 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.8ms | Allocations: 1917)
+
+
+Started GET "/article/17" for ::1 at 2023-01-17 15:36:50 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 669)
+
+
+Started PUT "/article/17" for ::1 at 2023-01-17 15:36:53 +0100
+Processing by ArticlesController#modify as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:21:in `modify'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mArticle Update (0.3ms)[0m  [1m[33mUPDATE "articles" SET "body" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["body", "toto"], ["updated_at", "2023-01-17 14:36:53.795444"], ["id", 17]]
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+Completed 204 No Content in 9ms (ActiveRecord: 6.7ms | Allocations: 2248)
+
+
+Started GET "/article/17" for ::1 at 2023-01-17 15:36:53 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:36:54 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1887)
+
+
+Started GET "/article/18" for ::1 at 2023-01-17 15:37:06 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started PUT "/article/18" for ::1 at 2023-01-17 15:37:13 +0100
+Processing by ArticlesController#modify as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:21:in `modify'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mArticle Update (0.4ms)[0m  [1m[33mUPDATE "articles" SET "body" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["body", "toto"], ["updated_at", "2023-01-17 14:37:13.152988"], ["id", 18]]
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+Completed 204 No Content in 6ms (ActiveRecord: 1.7ms | Allocations: 2245)
+
+
+Started GET "/article/18" for ::1 at 2023-01-17 15:37:13 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:37:13 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1887)
+
+
+Started GET "/article/17" for ::1 at 2023-01-17 15:37:15 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started PUT "/article/17" for ::1 at 2023-01-17 15:37:18 +0100
+Processing by ArticlesController#modify as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:21:in `modify'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mArticle Update (0.9ms)[0m  [1m[33mUPDATE "articles" SET "author" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["author", "toto"], ["updated_at", "2023-01-17 14:37:18.874457"], ["id", 17]]
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+Completed 204 No Content in 9ms (ActiveRecord: 2.6ms | Allocations: 2249)
+
+
+Started GET "/article/17" for ::1 at 2023-01-17 15:37:18 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:37:19 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1887)
+
+
+Started DELETE "/article/17" for ::1 at 2023-01-17 15:37:22 +0100
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mArticle Destroy (0.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+Completed 204 No Content in 3ms (ActiveRecord: 1.5ms | Allocations: 2001)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:37:22 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:47:36 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1908)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:47:41 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:47:49 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:49:06 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:49:28 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:49:41 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:50:47 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:51:15 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:52:12 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 4684)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 15:52:30 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1785)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:52:31 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:52:34 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:52:41 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:52:42 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:52:51 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.6ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:52:58 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:53:58 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:55:43 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:55:47 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1765)
+
+
+Started GET "/articles/18" for ::1 at 2023-01-17 15:55:47 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 873)
+
+
+Started GET "/articles/18" for ::1 at 2023-01-17 15:55:50 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/articles/18" for ::1 at 2023-01-17 15:55:53 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:58:43 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:59:29 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:59:36 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:59:52 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 15:59:54 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 1766)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 16:00:23 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 16:00:29 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1766)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 16:01:54 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 16:02:12 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/" for ::1 at 2023-01-17 16:02:20 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1765)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 16:02:20 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/articles/1" for ::1 at 2023-01-17 16:02:22 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 565)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:7:in `show'
+Started PUT "/articles/19" for ::1 at 2023-01-17 16:02:27 +0100
+Processing by ArticlesController#modify as */*
+  Parameters: {"id"=>"19"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:21:in `modify'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mArticle Update (0.3ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "body" = ?, "author" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", nil], ["body", nil], ["author", nil], ["updated_at", "2023-01-17 15:02:27.431339"], ["id", 19]]
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+Completed 204 No Content in 7ms (ActiveRecord: 3.0ms | Allocations: 2407)
+
+
+Started GET "/articles/1" for ::1 at 2023-01-17 16:02:27 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 533)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:7:in `show'
+Started GET "/articles" for ::1 at 2023-01-17 16:02:27 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1748)
+
+
+Started GET "/articles/1" for ::1 at 2023-01-17 16:02:31 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 533)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:7:in `show'
+Started GET "/articles" for ::1 at 2023-01-17 16:03:22 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1747)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 16:03:23 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1747)
+
+
+Started GET "/articles/1" for ::1 at 2023-01-17 16:03:25 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 533)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:7:in `show'
+Started GET "/articles/1" for ::1 at 2023-01-17 16:03:27 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 533)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:7:in `show'
+Started GET "/articles/1" for ::1 at 2023-01-17 16:03:30 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 533)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:7:in `show'
+Started GET "/articles/1" for ::1 at 2023-01-17 16:04:08 +0100
+Started GET "/articles/20" for ::1 at 2023-01-17 16:04:08 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 540)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:7:in `show'
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 16:04:26 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1747)
+
+
+Started GET "/articles/20" for ::1 at 2023-01-17 16:04:27 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started PUT "/articles/20" for ::1 at 2023-01-17 16:04:32 +0100
+Processing by ArticlesController#modify as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:21:in `modify'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mArticle Update (0.3ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "body" = ?, "author" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "y"], ["body", "g"], ["author", "g"], ["updated_at", "2023-01-17 15:04:32.113459"], ["id", 20]]
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:22:in `modify'
+Completed 204 No Content in 5ms (ActiveRecord: 2.5ms | Allocations: 2265)
+
+
+Started GET "/articles/20" for ::1 at 2023-01-17 16:04:32 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 640)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 16:04:32 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1747)
+
+
+Started GET "/articles" for ::1 at 2023-01-17 16:36:19 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1889)
+
+
+Started GET "/articles/" for ::1 at 2023-01-22 18:57:34 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.6ms | Allocations: 9142)
+
+
+Started POST "/article" for ::1 at 2023-01-22 18:57:53 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/article"):
+  
+Started GET "/articles/" for ::1 at 2023-01-22 18:57:53 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1849)
+
+
+Started GET "/articles/" for ::1 at 2023-01-22 18:58:02 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1760)
+
+
+Started GET "/articles/" for ::1 at 2023-01-22 18:58:21 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 1760)
+
+
+Started GET "/articles" for ::1 at 2023-01-22 18:58:33 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 1759)
+
+
+Started GET "/articles" for ::1 at 2023-01-22 18:58:36 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1747)
+
+
+Started GET "/articles/19" for ::1 at 2023-01-22 18:58:41 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"19"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 2414)
+
+
+Started DELETE "/article/19" for ::1 at 2023-01-22 18:58:45 +0100
+  
+ActionController::RoutingError (No route matches [DELETE] "/article/19"):
+  
+Started GET "/articles" for ::1 at 2023-01-22 18:58:45 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1769)
+
+
+Started DELETE "/article/19" for ::1 at 2023-01-22 18:58:47 +0100
+  
+ActionController::RoutingError (No route matches [DELETE] "/article/19"):
+  
+Started GET "/articles" for ::1 at 2023-01-22 18:58:47 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1747)
+
+
+Started DELETE "/article/19" for ::1 at 2023-01-22 18:58:48 +0100
+  
+ActionController::RoutingError (No route matches [DELETE] "/article/19"):
+  
+Started GET "/articles" for ::1 at 2023-01-22 18:58:48 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.1ms | Allocations: 1747)
+
+
+Started GET "/articles/" for ::1 at 2023-02-04 12:56:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.9ms | Allocations: 9141)
+
+
+Started GET "/articles" for ::1 at 2023-02-04 12:57:06 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1853)
+
+
+Started GET "/articles" for ::1 at 2023-02-04 12:58:46 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1759)
+
+
+Started GET "/articles" for ::1 at 2023-02-04 13:01:18 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.2ms | Allocations: 1760)
+
+
+Started GET "/articles" for ::1 at 2023-02-08 11:18:21 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 0.6ms | Allocations: 9141)
+
+
+Started DELETE "/articles/19" for ::1 at 2023-02-08 11:18:23 +0100
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"19"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mArticle Destroy (0.8ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 19]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+Completed 204 No Content in 14ms (ActiveRecord: 3.8ms | Allocations: 3051)
+
+
+Started DELETE "/articles/19" for ::1 at 2023-02-08 11:18:25 +0100
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"19"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms | Allocations: 609)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=19):
+  
+app/controllers/articles_controller.rb:16:in `delete'
+Started GET "/articles" for ::1 at 2023-02-08 11:18:55 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1705)
+
+
+Started DELETE "/articles/20" for ::1 at 2023-02-08 11:19:04 +0100
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mArticle Destroy (2.0ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 20]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+Completed 204 No Content in 7ms (ActiveRecord: 3.9ms | Allocations: 1941)
+
+
+Started GET "/articles" for ::1 at 2023-02-08 11:19:11 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1521)
+
+
+Started GET "/articles" for ::1 at 2023-02-08 11:21:18 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1521)
+
+
+Started DELETE "/articles/21" for ::1 at 2023-02-08 11:21:21 +0100
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"21"}
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mArticle Destroy (0.6ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 21]]
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:16:in `delete'
+Completed 204 No Content in 13ms (ActiveRecord: 9.0ms | Allocations: 1929)
+
+
+Started GET "/articles" for ::1 at 2023-02-08 11:21:21 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1399)
+
+
+Started GET "/articles" for ::1 at 2023-02-08 11:25:39 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1399)
+
+
+Started GET "/articles" for ::1 at 2023-02-08 11:25:43 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 18ms (Views: 12.9ms | ActiveRecord: 0.1ms | Allocations: 1399)
+
+
+Started GET "/articles/" for ::1 at 2023-02-08 11:25:46 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.1ms | Allocations: 1399)
+
+
+Started POST "/article" for ::1 at 2023-02-08 11:25:53 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/article"):
+  
+Started GET "/articles/" for ::1 at 2023-02-08 11:25:53 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1399)
+
+
+Started GET "/articles/" for ::1 at 2023-02-08 11:26:00 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1399)
+
+
+Started GET "/articles/" for ::1 at 2023-02-08 11:26:06 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1399)
+
+
+Started GET "/articles/" for ::1 at 2023-02-08 11:26:21 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1399)
+
+
+Started GET "/articles/" for ::1 at 2023-02-08 11:26:25 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1400)
+
+
+Started GET "/articles" for ::1 at 2023-02-08 11:26:25 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1399)
+
+
+Started GET "/articles" for ::1 at 2023-02-08 11:27:01 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1399)
+
+
+Started GET "/articles" for ::1 at 2023-02-08 11:27:12 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 1399)
+
+
+Started GET "/articles/" for ::1 at 2023-02-08 11:27:12 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1399)
+
+
+Started POST "/articles/" for ::1 at 2023-02-08 11:27:18 +0100
+Processing by ArticlesController#create as */*
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:12:in `create'
+  [1m[36mArticle Create (4.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "erpgjqper"], ["body", "lzjdhzeh"], ["author", "lkdehflzef"], ["created_at", "2023-02-08 10:27:18.806560"], ["updated_at", "2023-02-08 10:27:18.806560"]]
+  ↳ app/controllers/articles_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:12:in `create'
+Completed 204 No Content in 10ms (ActiveRecord: 5.0ms | Allocations: 2135)
+
+
+Started GET "/articles/" for ::1 at 2023-02-08 11:27:18 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1521)
+
+
+Started GET "/articles/" for ::1 at 2023-02-08 11:27:58 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1521)
+
+
+Started GET "/articles/" for ::1 at 2023-02-08 11:28:04 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1521)
+
+
+Started GET "/articles/" for ::1 at 2023-02-08 11:30:34 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1521)
+
+

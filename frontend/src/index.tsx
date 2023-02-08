@@ -9,7 +9,7 @@ import ModifyArticle from "./Articles/ModifyArticle";
 import reportWebVitals from "./reportWebVitals";
 import { PublicHomePage } from "./public/PublicHomePage";
 import { Grommet } from "grommet";
-import { ConnexionPage } from "./public/ConnexionPage";
+import { ConnectionPage } from "./public/ConnectionPage";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/article/:id",
     element: <DisplayArticle />,
+  },
+  {
+    path: "/connection",
+    element: <ConnectionPage />,
   },
   {
     path: "/admin",

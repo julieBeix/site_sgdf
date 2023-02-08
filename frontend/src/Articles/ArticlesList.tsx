@@ -1,12 +1,7 @@
 import { Card, CardBody, CardFooter, CardHeader } from "grommet";
-import { useQuery } from "react-query";
 import { ExistingArticle } from "./Article";
 import { LikeButton, ReadArticleButton, ShareButton } from "../utils/Buttons";
-
-const getArticles = async () => {
-  const response = await fetch("http://localhost:3000/articles");
-  return await response.json();
-};
+import { useArticlesIndex } from "./hooks/useArticles";
 
 const ArticleCard = ({ article }: { article: ExistingArticle }) => {
   return (
@@ -27,7 +22,7 @@ const ArticleCard = ({ article }: { article: ExistingArticle }) => {
 };
 
 const ArticlesList = () => {
-  const query = useQuery(["Articles"], getArticles);
+  const query = useArticlesIndex();
   const articleList = query?.data?.map((article: ExistingArticle) => {
     return <ArticleCard article={article} key={article.id} />;
   });
