@@ -1,6 +1,7 @@
 import { Table, TableBody, TableCell, TableHeader, TableRow } from "grommet";
 import { useQuery } from "react-query";
 import { ExistingArticle } from "../Articles/Article";
+import { useArticlesIndex } from "../Articles/hooks/useArticles";
 import { DeleteButton, ModifyButton } from "../utils/Buttons";
 import { AdminAppBar } from "./AdminAppBar";
 
@@ -22,13 +23,9 @@ const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
   );
 };
 
-const getArticles = async () => {
-  const response = await fetch("http://localhost:3000/articles");
-  return await response.json();
-};
-
 const AdminPage = () => {
-  const query = useQuery(["Articles"], getArticles);
+  const query = useArticlesIndex();
+  console.log(query?.data);
   const articleList = query?.data?.map((article: ExistingArticle) => {
     return <ArticleLigne article={article} key={article.id} />;
   });

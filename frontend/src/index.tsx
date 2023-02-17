@@ -10,6 +10,7 @@ import reportWebVitals from "./reportWebVitals";
 import { PublicHomePage } from "./public/PublicHomePage";
 import { Grommet } from "grommet";
 import { ConnectionPage } from "./public/ConnectionPage";
+import UsersPage from "./Admin/UsersPage";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/article/:id",
     element: <ModifyArticle />,
+  },
+  {
+    path: "/admin/users",
+    element: <UsersPage />,
   },
 ]);
 
