@@ -38,6 +38,23 @@ class UsersController < ApplicationController
     @user.destroy
   end
 
+  def verify
+    parsed_body = JSON.parse(request.body.read)
+    user = User.find_by(email: parsed_body['email'])
+    puts(parsed_body)
+    puts(user)
+
+    if !user
+      render json: {status: 'not_found'}, status: :not_found
+      return
+    end
+    if user.pwd != parsed_body['pwd']
+      render json: {status: 'unauthorized'}, status: :unauthorized
+      return
+    end
+    render json: {account_id: user.id, first_name: user.first_name, last_name: user.last_name, status: 'accepted'}, status: :accepted
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user

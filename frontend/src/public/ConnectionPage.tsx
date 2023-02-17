@@ -14,7 +14,7 @@ import { useLocalStorage } from "react-use";
 
 export interface AccountCred {
   email: string;
-  password: string;
+  pwd: string;
 }
 
 const verifyAccount = async (cred: AccountCred) => {
@@ -27,7 +27,7 @@ const verifyAccount = async (cred: AccountCred) => {
 };
 
 export const ConnectionPage = () => {
-  const initialState = { email: "", password: "" };
+  const initialState = { email: "", pwd: "" };
   const [value, setValue] = useState<AccountCred>(initialState);
   const [connectionStatus, setConnectionStatus] = useLocalStorage(
     "connectionStatus",
@@ -38,6 +38,7 @@ export const ConnectionPage = () => {
       setValue(initialState);
       if (data?.status === "accepted") {
         setConnectionStatus(true);
+        window.location.href = "http://localhost:3001/admin";
       }
     },
   });
@@ -60,12 +61,8 @@ export const ConnectionPage = () => {
             <FormField name="email" htmlFor="text-input-id" label="Email">
               <TextInput id="text-input-id" name="email" />
             </FormField>
-            <FormField
-              name="password"
-              htmlFor="text-input-id"
-              label="Mot de passe"
-            >
-              <TextInput id="text-input-id" name="password" />
+            <FormField name="pwd" htmlFor="text-input-id" label="Mot de passe">
+              <TextInput id="text-input-id" name="pwd" />
             </FormField>
             <Box direction="row" gap="medium">
               <Button type="submit" primary label="Connection" />

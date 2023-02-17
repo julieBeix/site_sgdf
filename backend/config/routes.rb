@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   delete "/articles/:id", to: "articles#delete"
   put "/articles/:id", to: "articles#modify"
 
-  post "/connection", to: "account_creds#verify"
+  post "/connection", to: "users#verify"
 end
