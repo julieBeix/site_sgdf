@@ -2,7 +2,7 @@ import { Button } from "grommet";
 import { Favorite, Home, ShareOption } from "grommet-icons";
 import { AiFillDelete } from "react-icons/ai";
 import { BsFillPencilFill } from "react-icons/bs";
-import { useMutation, useQueryClient } from "react-query";
+import { useArticleDelete } from "../Articles/hooks/useArticles";
 
 export const LikeButton = () => {
   return (
@@ -27,19 +27,8 @@ export const ReadArticleButton = ({ id }: { id: number }) => {
   );
 };
 
-const deleteArticle = async (id: number) => {
-  await fetch("http://localhost:3000/article/" + id.toString(), {
-    method: "DELETE",
-  });
-};
-
 export const DeleteButton = ({ id }: { id: number }) => {
-  const client = useQueryClient();
-  const mutation = useMutation(deleteArticle, {
-    onSuccess: () => {
-      client.invalidateQueries(["Articles"]);
-    },
-  });
+  const mutation = useArticleDelete(id.toString());
   return (
     <Button
       icon={<AiFillDelete color="plain" />}

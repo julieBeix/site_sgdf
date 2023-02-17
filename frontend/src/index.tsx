@@ -1,26 +1,33 @@
-import { Box, Heading, Grommet } from "grommet";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AdminPage from "./Admin/AdminPage";
-import App from "./App";
+import ArticlesPage from "./Articles/ArticlesPage";
 import DisplayArticle from "./Articles/DisplayArticle";
 import ModifyArticle from "./Articles/ModifyArticle";
 import reportWebVitals from "./reportWebVitals";
+import { PublicHomePage } from "./public/PublicHomePage";
+import { Grommet } from "grommet";
+import { ConnectionPage } from "./public/ConnectionPage";
+import UsersPage from "./Admin/UsersPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <PublicHomePage />,
   },
   {
     path: "/articles",
-    element: <App />,
+    element: <ArticlesPage />,
   },
   {
     path: "/article/:id",
     element: <DisplayArticle />,
+  },
+  {
+    path: "/connection",
+    element: <ConnectionPage />,
   },
   {
     path: "/admin",
@@ -30,13 +37,14 @@ const router = createBrowserRouter([
     path: "/admin/article/:id",
     element: <ModifyArticle />,
   },
+  {
+    path: "/admin/users",
+    element: <UsersPage />,
+  },
 ]);
 
-const theme = {
+const GlobalTheme = {
   global: {
-    colors: {
-      brand: "#228BE6",
-    },
     font: {
       family: "Roboto",
       size: "18px",
@@ -45,19 +53,6 @@ const theme = {
   },
 };
 
-const AppBar = (props: any) => (
-  <Box
-    tag="header"
-    direction="row"
-    align="center"
-    justify="between"
-    background="brand"
-    pad={{ left: "medium", right: "small", vertical: "small" }}
-    elevation="medium"
-    style={{ zIndex: "1" }}
-    {...props}
-  />
-);
 const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(
@@ -65,12 +60,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Grommet theme={theme} full>
-      <AppBar>
-        <Heading level="3" margin="none">
-          Groupe Scouts et Guides de France d'Eaubonne
-        </Heading>
-      </AppBar>
+    <Grommet theme={GlobalTheme}>
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
       </QueryClientProvider>
