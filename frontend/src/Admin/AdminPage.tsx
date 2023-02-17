@@ -2,10 +2,10 @@ import { Table, TableBody, TableCell, TableHeader, TableRow } from "grommet";
 import { useParams } from "react-router-dom";
 import { ExistingArticle } from "../Articles/Article";
 import { useArticlesIndex } from "../Articles/hooks/useArticles";
-import { useUsersIndex, useUsersShow } from "../Articles/hooks/useUsers";
+import { useUsersShow } from "../Articles/hooks/useUsers";
 import { DeleteButton, ModifyButton } from "../utils/Buttons";
 import { AdminAppBar } from "./AdminAppBar";
-import UsersPage, { User } from "./UsersPage";
+import UsersPage from "./UsersPage";
 
 const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
   return (

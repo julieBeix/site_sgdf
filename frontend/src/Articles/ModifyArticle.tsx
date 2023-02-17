@@ -6,7 +6,7 @@ import { useArticlesModify, useArticlesShow } from "./hooks/useArticles";
 
 const ModifyArticle = () => {
   const { id } = useParams();
-  const { data, isLoading } = useArticlesShow(id);
+  const { data } = useArticlesShow(id);
   const initialState = {
     title: "",
     body: "",

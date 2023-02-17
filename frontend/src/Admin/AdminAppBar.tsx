@@ -1,6 +1,5 @@
 import { Heading, Grommet, Button, Menu } from "grommet";
 import { AppBar } from "../utils/AppBar";
-import { User } from "./UsersPage";
 
 const AdminTheme = {
   global: {

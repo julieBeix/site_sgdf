@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 import { useMutation, useQueryClient } from "react-query";
-import { InCreationUser, User } from "../../Admin/UsersPage";
+import { InCreationUser } from "../../Admin/UsersPage";
 
 
 const buildIndexQueryKey = () => ["Users"]

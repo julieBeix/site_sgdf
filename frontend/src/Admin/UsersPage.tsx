@@ -15,7 +15,6 @@ import {
 import { useState } from "react";
 import { useAddUser, useUsersIndex } from "../Articles/hooks/useUsers";
 import { DeleteButton, ModifyButton } from "../utils/Buttons";
-import { AdminAppBar } from "./AdminAppBar";
 
 export interface InCreationUser {
   first_name: string;
