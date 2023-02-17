@@ -1,5 +1,6 @@
 import { Heading, Grommet, Button, Menu } from "grommet";
 import { AppBar } from "../utils/AppBar";
+import { User } from "./UsersPage";
 
 const AdminTheme = {
   global: {
@@ -14,7 +15,7 @@ const AdminTheme = {
   },
 };
 
-export const AdminAppBar = () => {
+export const AdminAppBar = (user: any) => {
   return (
     <Grommet theme={AdminTheme}>
       <AppBar>
@@ -30,6 +31,7 @@ export const AdminAppBar = () => {
         <Menu
           label="Menu"
           items={[
+            { label: user?.user?.first_name },
             {
               label: "Public",
               onClick: () => {

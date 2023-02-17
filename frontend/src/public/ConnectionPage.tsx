@@ -12,13 +12,12 @@ import { useMutation } from "react-query";
 import { PublicAppBar } from "./PublicAppBar";
 import { useLocalStorage } from "react-use";
 
-export interface AccountCred {
+export interface ConnectionCred {
   email: string;
   pwd: string;
 }
 
-const verifyAccount = async (cred: AccountCred) => {
-  console.log(cred);
+const verifyAccount = async (cred: ConnectionCred) => {
   const response = await fetch("http://localhost:3000/connection", {
     method: "POST",
     body: JSON.stringify(cred),
@@ -28,7 +27,7 @@ const verifyAccount = async (cred: AccountCred) => {
 
 export const ConnectionPage = () => {
   const initialState = { email: "", pwd: "" };
-  const [value, setValue] = useState<AccountCred>(initialState);
+  const [value, setValue] = useState<ConnectionCred>(initialState);
   const [connectionStatus, setConnectionStatus] = useLocalStorage(
     "connectionStatus",
     false
@@ -38,7 +37,8 @@ export const ConnectionPage = () => {
       setValue(initialState);
       if (data?.status === "accepted") {
         setConnectionStatus(true);
-        window.location.href = "http://localhost:3001/admin";
+        window.location.href =
+          "http://localhost:3001/admin/" + data.account_id.toString();
       }
     },
   });
@@ -52,7 +52,7 @@ export const ConnectionPage = () => {
         <CardBody pad="medium">
           <Form
             value={value}
-            onChange={(nextValue: AccountCred) => setValue(nextValue)}
+            onChange={(nextValue: ConnectionCred) => setValue(nextValue)}
             onReset={() => setValue(initialState)}
             onSubmit={({ value }) => {
               mutation.mutate(value);

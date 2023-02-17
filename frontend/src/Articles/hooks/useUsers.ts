@@ -4,7 +4,7 @@ import { InCreationUser, User } from "../../Admin/UsersPage";
 
 
 const buildIndexQueryKey = () => ["Users"]
-//const buildShowQueryKey = (id: string) => ["User", id]
+const buildShowQueryKey = (id: string) => ["User", id]
 const usersUrl = "http://localhost:3000/users/"
 
 export const useUsersIndex = () => useQuery(buildIndexQueryKey(), async () => {
@@ -12,10 +12,10 @@ export const useUsersIndex = () => useQuery(buildIndexQueryKey(), async () => {
     return await response.json();
   });
 
-// export const useArticlesShow = (id: string = "1") => useQuery(buildShowQueryKey(id), async () => {
-//     const response = await fetch(articlesUrl + id);
-//     return await response.json();
-//   });
+ export const useUsersShow = (id: string = "-1") => useQuery(buildShowQueryKey(id), async () => {
+     const response = await fetch(usersUrl + id);
+     return await response.json();
+   });
 
 //  const updateArticle = async ({
 //      article,

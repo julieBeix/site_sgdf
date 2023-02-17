@@ -1,9 +1,11 @@
 import { Table, TableBody, TableCell, TableHeader, TableRow } from "grommet";
-import { useQuery } from "react-query";
+import { useParams } from "react-router-dom";
 import { ExistingArticle } from "../Articles/Article";
 import { useArticlesIndex } from "../Articles/hooks/useArticles";
+import { useUsersIndex, useUsersShow } from "../Articles/hooks/useUsers";
 import { DeleteButton, ModifyButton } from "../utils/Buttons";
 import { AdminAppBar } from "./AdminAppBar";
+import UsersPage, { User } from "./UsersPage";
 
 const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
   return (
@@ -24,14 +26,16 @@ const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
 };
 
 const AdminPage = () => {
+  const { id } = useParams();
   const query = useArticlesIndex();
-  console.log(query?.data);
+  const userQuery = useUsersShow(id);
+  const user = userQuery?.data;
   const articleList = query?.data?.map((article: ExistingArticle) => {
     return <ArticleLigne article={article} key={article.id} />;
   });
   return (
     <div>
-      <AdminAppBar />
+      <AdminAppBar user={user} />
       <Table>
         <TableHeader>
           <TableRow>
@@ -48,6 +52,7 @@ const AdminPage = () => {
         </TableHeader>
         <TableBody>{articleList}</TableBody>
       </Table>
+      <UsersPage />
     </div>
   );
 };

@@ -94,7 +94,6 @@ const UsersPage = () => {
   });
   return (
     <div>
-      <AdminAppBar />
       <Table>
         <TableHeader>
           <TableRow>
