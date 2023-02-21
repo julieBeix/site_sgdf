@@ -50,3 +50,8 @@ end
 gem "pry-rails", "~> 0.3.9", :group => :development
 
 gem "rack-cors", "~> 1.1"
+
+# Use Json Web Token (JWT) for token based authentication
+gem 'jwt'
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'

@@ -28,23 +28,19 @@ const verifyAccount = async (cred: ConnectionCred) => {
 export const ConnectionPage = () => {
   const initialState = { email: "", pwd: "" };
   const [value, setValue] = useState<ConnectionCred>(initialState);
-  const [connectionStatus, setConnectionStatus] = useLocalStorage(
-    "connectionStatus",
-    false
-  );
+  const [token, setToken] = useLocalStorage("token", false);
   const mutation = useMutation(verifyAccount, {
     onSuccess: (data) => {
       setValue(initialState);
       if (data?.status === "accepted") {
-        setConnectionStatus(true);
-        window.location.href =
-          "http://localhost:3001/admin/" + data.account_id.toString();
+        setToken(data?.token);
+        window.location.href = "http://localhost:3001/admin/";
       }
     },
   });
   useEffect(() => {
-    console.log(connectionStatus);
-  }, [connectionStatus]);
+    console.log(token);
+  }, [token]);
   return (
     <div>
       <PublicAppBar />

@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  before_action :authorize_request, except: %i[show index create]
   def index
     render json: Article.all
   end

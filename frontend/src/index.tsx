@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     element: <ConnectionPage />,
   },
   {
-    path: "/admin/:id",
+    path: "/admin",
     element: <AdminPage />,
   },
   {

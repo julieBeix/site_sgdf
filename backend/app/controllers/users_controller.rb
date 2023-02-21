@@ -43,16 +43,13 @@ class UsersController < ApplicationController
     user = User.find_by(email: parsed_body['email'])
     puts(parsed_body)
     puts(user)
-
-    if !user
-      render json: {status: 'not_found'}, status: :not_found
-      return
-    end
-    if user.pwd != parsed_body['pwd']
+    if !user || user.pwd != parsed_body['pwd']
       render json: {status: 'unauthorized'}, status: :unauthorized
       return
     end
-    render json: {account_id: user.id, first_name: user.first_name, last_name: user.last_name, status: 'accepted'}, status: :accepted
+    token = JsonWebToken.encode(user_id: user.id)
+    time = Time.now + 24.hours.to_i
+    render json: {token: token, exp: time.strftime("%m-%d-%Y %H:%M"), account_id: user.id, first_name: user.first_name, last_name: user.last_name, status: 'accepted'}, status: :accepted
   end
 
   private

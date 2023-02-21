@@ -9313,3 +9313,780 @@ Processing by ArticlesController#index as */*
 Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1521)
 
 
+Started GET "/articles/" for ::1 at 2023-02-21 15:03:54 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 0.5ms | Allocations: 8916)
+
+
+Started POST "/articles/" for ::1 at 2023-02-21 15:04:11 +0100
+Processing by ArticlesController#create as */*
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:12:in `create'
+  [1m[36mArticle Create (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "nicolas en stage"], ["body", "stage"], ["author", "nicolas"], ["created_at", "2023-02-21 14:04:11.418066"], ["updated_at", "2023-02-21 14:04:11.418066"]]
+  ↳ app/controllers/articles_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:12:in `create'
+Completed 204 No Content in 4ms (ActiveRecord: 1.7ms | Allocations: 2425)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 15:04:11 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1681)
+
+
+Started POST "/connection" for ::1 at 2023-02-21 15:04:27 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "julie.beix@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 401 Unauthorized in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 5785)
+
+
+Started POST "/connection" for ::1 at 2023-02-21 15:04:36 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 202 Accepted in 4ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 645)
+
+
+Started GET "/users/2" for ::1 at 2023-02-21 15:04:37 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 15:04:37 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:04:37 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:61:in `set_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 903)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1664)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1144)
+
+
+Started GET "/articles/31" for ::1 at 2023-02-21 15:04:43 +0100
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"31"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 806)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 15:09:07 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:09:07 +0100
+Started GET "/users/2" for ::1 at 2023-02-21 15:09:07 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 1643)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1099)
+
+
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:61:in `set_user'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 663)
+
+
+Started GET "/users/2" for ::1 at 2023-02-21 15:09:08 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:61:in `set_user'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 665)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 15:09:08 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:09:08 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1715)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1103)
+
+
+Started POST "/connection" for ::1 at 2023-02-21 15:09:38 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 592)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 15:09:39 +0100
+Started GET "/users/2" for ::1 at 2023-02-21 15:09:39 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:09:39 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Processing by ArticlesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:61:in `set_user'
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 1060)
+
+
+  ↳ app/controllers/articles_controller.rb:3:in `index'
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.3ms | Allocations: 2700)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 1119)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 15:28:19 +0100
+Started GET "/users/2" for ::1 at 2023-02-21 15:28:19 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:28:19 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NoMethodError (undefined method `befor_action' for ArticlesController:Class
+
+  befor_action :authorize_request, except: %i[show index create]
+  ^^^^^^^^^^^^
+Did you mean?  before_action):
+  
+app/controllers/articles_controller.rb:2:in `<class:ArticlesController>'
+app/controllers/articles_controller.rb:1:in `<main>'
+Processing by UsersController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.4ms | Allocations: 22157)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 4.5ms | Allocations: 8276)
+
+
+Started GET "/users/2" for ::1 at 2023-02-21 15:28:33 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:28:33 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 15:28:33 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 9858)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 1259)
+
+
+  
+NoMethodError (undefined method `befor_action' for ArticlesController:Class
+
+  befor_action :authorize_request, except: %i[show index create]
+  ^^^^^^^^^^^^
+Did you mean?  before_action):
+  
+app/controllers/articles_controller.rb:2:in `<class:ArticlesController>'
+app/controllers/articles_controller.rb:1:in `<main>'
+Started GET "/articles/" for ::1 at 2023-02-21 15:29:12 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:29:12 +0100
+Started GET "/users/2" for ::1 at 2023-02-21 15:29:12 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Processing by UsersController#index as */*
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 5016)
+
+
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 3802)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.6ms | Allocations: 5224)
+
+
+Started POST "/connection" for ::1 at 2023-02-21 15:29:31 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 2750)
+
+
+  
+NameError (uninitialized constant JsonWebToken::JWT
+
+    JWT.encode(payload, SECRET_KEY)
+    ^^^):
+  
+app/lib/json_web_token.rb:6:in `encode'
+app/controllers/users_controller.rb:50:in `verify'
+Started GET "/connection" for ::1 at 2023-02-21 15:29:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/connection"):
+  
+Started GET "/favicon.ico" for ::1 at 2023-02-21 15:29:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/connection" for ::1 at 2023-02-21 15:31:06 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 5847)
+
+
+  
+NameError (uninitialized constant JsonWebToken::JWT
+
+    JWT.encode(payload, SECRET_KEY)
+    ^^^):
+  
+app/lib/json_web_token.rb:7:in `encode'
+app/controllers/users_controller.rb:50:in `verify'
+Started POST "/connection" for ::1 at 2023-02-21 15:39:05 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms | Allocations: 11613)
+
+
+  
+NameError (uninitialized constant AuthenticationController
+
+class AuthenticationController::JsonWebToken
+      ^^^^^^^^^^^^^^^^^^^^^^^^):
+  
+app/lib/json_web_token.rb:1:in `<main>'
+app/controllers/users_controller.rb:50:in `verify'
+Started POST "/connection" for ::1 at 2023-02-21 15:39:38 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 202 Accepted in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 4656)
+
+
+Started GET "/users/" for ::1 at 2023-02-21 15:39:38 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 15:39:38 +0100
+Started GET "/users/2" for ::1 at 2023-02-21 15:39:38 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1428)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.5ms | Allocations: 5274)
+
+
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 953)
+
+
+Started GET "/users/2" for ::1 at 2023-02-21 15:40:14 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:40:14 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 15:40:14 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 669)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1128)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1644)
+
+
+Started POST "/connection" for ::1 at 2023-02-21 15:40:55 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 729)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 15:40:56 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:40:56 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1662)
+
+
+Started GET "/users/2" for ::1 at 2023-02-21 15:40:56 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1086)
+
+
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 663)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 15:42:03 +0100
+Started GET "/users/2" for ::1 at 2023-02-21 15:42:03 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:42:03 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1649)
+
+
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 673)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 1081)
+
+
+Started POST "/connection" for ::1 at 2023-02-21 15:42:12 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 684)
+
+
+Started POST "/connection" for ::1 at 2023-02-21 15:44:09 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 684)
+
+
+Started GET "/users/" for ::1 at 2023-02-21 15:44:26 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 15:44:26 +0100
+Started GET "/users/2" for ::1 at 2023-02-21 15:44:26 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 1087)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1653)
+
+
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 662)
+
+
+Started GET "/users/2" for ::1 at 2023-02-21 15:45:01 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:45:01 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 15:45:01 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 775)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1644)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 1081)
+
+
+Started GET "/users/" for ::1 at 2023-02-21 15:45:01 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 15:45:01 +0100
+Processing by UsersController#index as */*
+Started GET "/users/3" for ::1 at 2023-02-21 15:45:01 +0100
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1085)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1650)
+
+
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 662)
+
+
+Started GET "/users/3" for ::1 at 2023-02-21 15:51:13 +0100
+Started GET "/users/" for ::1 at 2023-02-21 15:51:13 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 15:51:13 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1233)
+
+
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 2376)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1673)
+
+
+Started POST "/connection" for ::1 at 2023-02-21 15:51:22 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 720)
+
+
+Started POST "/connection" for ::1 at 2023-02-21 15:52:06 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 549)
+
+
+Started POST "/connection" for ::1 at 2023-02-21 15:52:13 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 202 Accepted in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 681)
+
+
+Started GET "/users/2" for ::1 at 2023-02-21 16:04:43 +0100
+Started GET "/users/" for ::1 at 2023-02-21 16:04:43 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 16:04:43 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Processing by UsersController#index as */*
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1447)
+
+
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 2055)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1673)
+
+
+Started DELETE "/articles/30" for ::1 at 2023-02-21 16:04:49 +0100
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"30"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 183)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 16:04:49 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1644)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 16:05:19 +0100
+Started GET "/users/2" for ::1 at 2023-02-21 16:05:19 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1653)
+
+
+Started GET "/users/" for ::1 at 2023-02-21 16:05:19 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 699)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1081)
+
+
+Started POST "/connection" for ::1 at 2023-02-21 16:05:27 +0100
+Processing by UsersController#verify as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "toto@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:43:in `verify'
+Completed 202 Accepted in 5ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 718)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 16:05:34 +0100
+Started GET "/users/" for ::1 at 2023-02-21 16:05:34 +0100
+Started GET "/users/2" for ::1 at 2023-02-21 16:05:34 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 1645)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1098)
+
+
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 662)
+
+
+Started DELETE "/articles/30" for ::1 at 2023-02-21 16:05:38 +0100
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize_request'
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:17:in `delete'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:17:in `delete'
+  [1m[36mArticle Destroy (2.1ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 30]]
+  ↳ app/controllers/articles_controller.rb:17:in `delete'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:17:in `delete'
+Completed 204 No Content in 5ms (ActiveRecord: 3.1ms | Allocations: 2911)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 16:05:38 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1522)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 16:05:42 +0100
+Started GET "/users/" for ::1 at 2023-02-21 16:05:42 +0100
+Started GET "/users/2" for ::1 at 2023-02-21 16:05:43 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1081)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1525)
+
+
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 662)
+
+
+Started GET "/users/" for ::1 at 2023-02-21 16:05:43 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 16:05:43 +0100
+Started GET "/users/3" for ::1 at 2023-02-21 16:05:43 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1092)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Processing by UsersController#show as */*
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1770)
+
+
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 671)
+
+
+Started DELETE "/articles/29" for ::1 at 2023-02-21 16:05:45 +0100
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"29"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize_request'
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:17:in `delete'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:17:in `delete'
+  [1m[36mArticle Destroy (0.2ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 29]]
+  ↳ app/controllers/articles_controller.rb:17:in `delete'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:17:in `delete'
+Completed 204 No Content in 3ms (ActiveRecord: 1.3ms | Allocations: 2465)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 16:05:45 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1400)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 16:06:36 +0100
+Started GET "/users/-1" for ::1 at 2023-02-21 16:06:36 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1400)
+
+
+Started GET "/users/" for ::1 at 2023-02-21 16:06:36 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"-1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", -1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 549)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=-1):
+  
+app/controllers/users_controller.rb:58:in `set_user'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 1081)
+
+
+Started GET "/users/" for ::1 at 2023-02-21 16:06:43 +0100
+Started GET "/users/-1" for ::1 at 2023-02-21 16:06:43 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 16:06:43 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1097)
+
+
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"-1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", -1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 540)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=-1):
+  
+app/controllers/users_controller.rb:58:in `set_user'
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1400)
+
+
+Started GET "/articles/" for ::1 at 2023-02-21 16:06:46 +0100
+Started GET "/users/-1" for ::1 at 2023-02-21 16:06:46 +0100
+Started GET "/users/" for ::1 at 2023-02-21 16:06:46 +0100
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1405)
+
+
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"-1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", -1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 529)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=-1):
+  
+app/controllers/users_controller.rb:58:in `set_user'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1081)
+
+
+Started GET "/users/" for ::1 at 2023-02-21 16:14:03 +0100
+Started GET "/articles/" for ::1 at 2023-02-21 16:14:03 +0100
+Started GET "/users/-1" for ::1 at 2023-02-21 16:14:03 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1265)
+
+
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1465)
+
+
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"-1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", -1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 560)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=-1):
+  
+app/controllers/users_controller.rb:58:in `set_user'

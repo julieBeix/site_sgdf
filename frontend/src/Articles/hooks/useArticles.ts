@@ -39,17 +39,20 @@ export const useArticlesModify = (id: string = "1") => {
     },
   })};
 
-  const deleteArticle = async (id: number) => {
-    await fetch(articlesUrl + id.toString(), {
+  const deleteArticle = async (id: string, token?: string) => {
+    await fetch(articlesUrl + id, {
       method: "DELETE",
+      headers: {'Authorization': 'Bearer ' + token
+    }
     })}
 
-export const useArticleDelete = (id: string = '1') => {
+export const useArticleDelete = (id: string = '1', token?: string) => {
     const client = useQueryClient()
-    return useMutation(deleteArticle, {onSuccess: () => {
+    return useMutation(() => deleteArticle(id, token), {onSuccess: () => {
       client.invalidateQueries(buildIndexQueryKey());
     }})
   }
+
 
   const addArticle = async (article: Article) => {
     await fetch(articlesUrl, {
