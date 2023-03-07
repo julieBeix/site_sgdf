@@ -1,5 +1,8 @@
 import { Table, TableBody, TableCell, TableHeader, TableRow } from "grommet";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useLocalStorage } from "react-use";
+import jwt_decode from "jwt-decode";
 import { ExistingArticle } from "../Articles/Article";
 import { useArticlesIndex } from "../Articles/hooks/useArticles";
 import { useUsersShow } from "../Articles/hooks/useUsers";
@@ -26,9 +29,11 @@ const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
 };
 
 const AdminPage = () => {
-  const { id } = useParams();
+  const [token, setToken] = useLocalStorage<string>("token");
+  const decodedToken = jwt_decode(token!) as any;
+  console.log(decodedToken);
   const query = useArticlesIndex();
-  const userQuery = useUsersShow(id);
+  const userQuery = useUsersShow(decodedToken.user_id);
   const user = userQuery?.data;
   const articleList = query?.data?.map((article: ExistingArticle) => {
     return <ArticleLigne article={article} key={article.id} />;

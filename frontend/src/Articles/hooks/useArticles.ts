@@ -23,16 +23,17 @@ const updateArticle = async ({
   }: {
     article: Article;
     id: string;
-  }) => {
+  }, token?: string) => {
     await fetch(articlesUrl + id, {
       method: "PUT",
+      headers: {'Authorization': 'Bearer ' + token},
       body: JSON.stringify(article),
-    });
+    }).then(response => {if (!response.ok) throw Error;});
   };
 
-export const useArticlesModify = (id: string = "1") => {
+export const useArticlesModify = (id: string = "1", token?: string) => {
     const client = useQueryClient();
-    return useMutation(updateArticle, {
+    return useMutation((article : Article) => updateArticle({id, article}, token), {
     onSuccess: () => {
       client.invalidateQueries(buildShowQueryKey(id));
       window.location.href = "http://localhost:3001/admin";

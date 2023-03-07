@@ -1,6 +1,7 @@
 import { Box, Button, Form, FormField, TextInput } from "grommet";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useLocalStorage } from "react-use";
 import { Article } from "./Article";
 import { useArticlesModify, useArticlesShow } from "./hooks/useArticles";
 
@@ -20,7 +21,8 @@ const ModifyArticle = () => {
       author: data?.author,
     });
   }, [data]);
-  const mutation = useArticlesModify(id);
+  const [token, setToken] = useLocalStorage<string>("token");
+  const mutation = useArticlesModify(id, token);
   if (!id) return <div />;
   return (
     <Form
@@ -28,7 +30,7 @@ const ModifyArticle = () => {
       onChange={(nextValue: Article) => setValue(nextValue)}
       onReset={() => setValue(initialState)}
       onSubmit={({ value }) => {
-        mutation.mutate({ article: value, id: id });
+        mutation.mutate(value);
       }}
     >
       <FormField name="title" htmlFor="text-input-id" label="Title">
