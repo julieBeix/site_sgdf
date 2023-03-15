@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: %i[ show update destroy ]
+  # before_action except: %i[show create update] do
+  #   authorize_request('admin')
+  # end
 
   # GET /users
   def index
@@ -47,7 +50,7 @@ class UsersController < ApplicationController
       render json: {status: 'unauthorized'}, status: :unauthorized
       return
     end
-    token = JsonWebToken.encode(user_id: user.id)
+    token = JsonWebToken.encode(user_id: user.id, role: 'admin')
     time = Time.now + 24.hours.to_i
     render json: {token: token, exp: time.strftime("%m-%d-%Y %H:%M"), account_id: user.id, first_name: user.first_name, last_name: user.last_name, status: 'accepted'}, status: :accepted
   end

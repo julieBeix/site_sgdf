@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import jwt_decode from "jwt-decode";
 import AdminPage from "./Admin/AdminPage";
 import ArticlesPage from "./Articles/ArticlesPage";
 import DisplayArticle from "./Articles/DisplayArticle";
@@ -14,6 +15,8 @@ import UsersPage from "./Admin/UsersPage";
 
 const token = localStorage.getItem("token");
 const loggedIn = token && token != null;
+const decodedToken = loggedIn ? (jwt_decode(token!) as any) : null;
+const isAdmin = decodedToken ? "admin" === decodedToken.role : null;
 
 const router = createBrowserRouter([
   {
@@ -42,7 +45,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin/users",
-    element: loggedIn ? <UsersPage /> : <ConnectionPage />,
+    element: isAdmin ? <UsersPage /> : <ConnectionPage />,
   },
 ]);
 

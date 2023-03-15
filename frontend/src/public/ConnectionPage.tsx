@@ -29,13 +29,14 @@ export const ConnectionPage = () => {
   const initialState = { email: "", pwd: "" };
   const [value, setValue] = useState<ConnectionCred>(initialState);
   const [token, setToken] = useLocalStorage("token", false);
+  const [lastEmail, setLastEmail] = useLocalStorage("lastEmail", "");
   const mutation = useMutation(verifyAccount, {
     onSuccess: (data) => {
-      setValue(initialState);
       if (data?.status === "accepted") {
         setToken(data?.token);
+        setLastEmail(value.email);
         window.location.href = "http://localhost:3001/admin/";
-      }
+      } else setValue(initialState);
     },
   });
   useEffect(() => {
@@ -55,10 +56,14 @@ export const ConnectionPage = () => {
             }}
           >
             <FormField name="email" htmlFor="text-input-id" label="Email">
-              <TextInput id="text-input-id" name="email" />
+              <TextInput
+                id="text-input-id"
+                name="email"
+                suggestions={lastEmail ? [lastEmail] : []}
+              />
             </FormField>
             <FormField name="pwd" htmlFor="text-input-id" label="Mot de passe">
-              <TextInput id="text-input-id" name="pwd" />
+              <TextInput id="text-input-id" name="pwd" type="password" />
             </FormField>
             <Box direction="row" gap="medium">
               <Button type="submit" primary label="Connection" />

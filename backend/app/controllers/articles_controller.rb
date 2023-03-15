@@ -1,11 +1,15 @@
 class ArticlesController < ApplicationController
-  before_action :authorize_request, except: %i[show index create]
+  before_action :set_article, only: %i[ show modify destroy ]
+  before_action except: %i[show index create] do
+    authorize_request('admin')
+  end
+
   def index
     render json: Article.all
   end
 
   def show
-    render json: Article.find(params[:id].to_i)
+    render json: @article
   end
 
   def create
@@ -14,12 +18,16 @@ class ArticlesController < ApplicationController
   end
 
   def delete
-    Article.destroy(params[:id].to_i)
+    @article.destroy
   end
 
   def modify
     parsed_body = JSON.parse(request.body.read)
-    article = Article.find(params[:id].to_i)
-    article.update(title: parsed_body['title'], body: parsed_body['body'], author: parsed_body['author'])
+    @article.update(title: parsed_body['title'], body: parsed_body['body'], author: parsed_body['author'])
+  end
+
+  private
+  def set_article
+    @article = Article.find(params[:id].to_i)
   end
 end
