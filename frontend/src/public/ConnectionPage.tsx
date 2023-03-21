@@ -70,6 +70,14 @@ export const ConnectionPage = () => {
             </Box>
           </Form>
         </CardBody>
+        <Button
+          onClick={() => {
+            const url = "http://localhost:3001/signin";
+            window.location.href = url;
+          }}
+        >
+          signin
+        </Button>
       </Card>
     </div>
   );

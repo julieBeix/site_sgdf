@@ -1,4 +1,5 @@
 import { Heading, Grommet, Button, Menu } from "grommet";
+import { useLocalStorage } from "react-use";
 import { AppBar } from "../utils/components/AppBar";
 
 const AdminTheme = {
@@ -15,6 +16,7 @@ const AdminTheme = {
 };
 
 export const AdminAppBar = (user: any) => {
+  const [token, setToken, clearToken] = useLocalStorage<string>("token");
   return (
     <Grommet theme={AdminTheme}>
       <AppBar>
@@ -41,6 +43,13 @@ export const AdminAppBar = (user: any) => {
               label: "Users",
               onClick: () => {
                 window.location.href = "http://localhost:3001/admin/users";
+              },
+            },
+            {
+              label: "Deconnect",
+              onClick: () => {
+                window.location.href = "http://localhost:3001/";
+                clearToken();
               },
             },
           ]}

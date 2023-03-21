@@ -13,6 +13,7 @@ import { Grommet } from "grommet";
 import { ConnectionPage } from "./public/ConnectionPage";
 import UsersPage from "./Admin/UsersPage";
 import { Role, getUserRole } from "./Admin/Role";
+import { CreateUser } from "./public/CreateUser";
 
 const token = localStorage.getItem("token");
 const loggedIn = token && token != null;
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/connection",
     element: <ConnectionPage />,
+  },
+  {
+    path: "/signin",
+    element: <CreateUser />,
   },
   {
     path: "/admin",

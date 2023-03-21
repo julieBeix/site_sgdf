@@ -6,7 +6,6 @@ import { useArticlesIndex } from "../Articles/hooks/useArticles";
 import { useUsersShow } from "../Articles/hooks/useUsers";
 import { DeleteButton, ModifyButton } from "../utils/components/Buttons";
 import { AdminAppBar } from "./AdminAppBar";
-import UsersPage from "./UsersPage";
 
 const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
   return (
@@ -27,7 +26,7 @@ const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
 };
 
 const AdminPage = () => {
-  const [token, setToken] = useLocalStorage<string>("token");
+  const [token] = useLocalStorage<string>("token");
   const decodedToken = jwt_decode(token!) as any;
   const query = useArticlesIndex();
   const userQuery = useUsersShow(decodedToken.user_id);
