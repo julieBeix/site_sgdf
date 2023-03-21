@@ -12,11 +12,12 @@ import { PublicHomePage } from "./public/PublicHomePage";
 import { Grommet } from "grommet";
 import { ConnectionPage } from "./public/ConnectionPage";
 import UsersPage from "./Admin/UsersPage";
+import { Role, getUserRole } from "./Admin/Role";
 
 const token = localStorage.getItem("token");
 const loggedIn = token && token != null;
 const decodedToken = loggedIn ? (jwt_decode(token!) as any) : null;
-const isAdmin = decodedToken ? "admin" === decodedToken.role : null;
+const userRole = decodedToken ? getUserRole(decodedToken.role) : -1;
 
 const router = createBrowserRouter([
   {
@@ -37,15 +38,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin",
-    element: loggedIn ? <AdminPage /> : <ConnectionPage />,
+    element: userRole >= Role.MEMBER ? <AdminPage /> : <ConnectionPage />,
   },
   {
     path: "/admin/article/:id",
-    element: loggedIn ? <ModifyArticle /> : <ConnectionPage />,
+    element: userRole >= Role.MEMBER ? <ModifyArticle /> : <ConnectionPage />,
   },
   {
     path: "/admin/users",
-    element: isAdmin ? <UsersPage /> : <ConnectionPage />,
+    element: userRole >= Role.ADMIN ? <UsersPage /> : <ConnectionPage />,
   },
 ]);
 

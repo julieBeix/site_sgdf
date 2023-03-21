@@ -50,7 +50,7 @@ class UsersController < ApplicationController
       render json: {status: 'unauthorized'}, status: :unauthorized
       return
     end
-    token = JsonWebToken.encode(user_id: user.id, role: 'admin')
+    token = JsonWebToken.encode(user_id: user.id, role: user.role)
     time = Time.now + 24.hours.to_i
     render json: {token: token, exp: time.strftime("%m-%d-%Y %H:%M"), account_id: user.id, first_name: user.first_name, last_name: user.last_name, status: 'accepted'}, status: :accepted
   end

@@ -1,6 +1,6 @@
 import { Page, PageContent, Paragraph } from "grommet";
 import { useParams } from "react-router-dom";
-import { BackButton } from "../utils/Buttons";
+import { BackButton } from "../utils/components/Buttons";
 import { useArticlesShow } from "./hooks/useArticles";
 
 const DisplayArticle = () => {

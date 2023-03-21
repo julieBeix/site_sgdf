@@ -1,5 +1,5 @@
 import { Heading, Grommet, Button, Menu } from "grommet";
-import { AppBar } from "../utils/AppBar";
+import { AppBar } from "../utils/components/AppBar";
 
 const PublicTheme = {
   global: {

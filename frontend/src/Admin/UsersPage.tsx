@@ -13,8 +13,15 @@ import {
   Button,
 } from "grommet";
 import { useState } from "react";
-import { useAddUser, useUsersIndex } from "../Articles/hooks/useUsers";
-import { DeleteButton, ModifyButton } from "../utils/Buttons";
+import { useLocalStorage } from "react-use";
+import jwt_decode from "jwt-decode";
+import {
+  useAddUser,
+  useUsersIndex,
+  useUsersShow,
+} from "../Articles/hooks/useUsers";
+import { DeleteButton, ModifyButton } from "../utils/components/Buttons";
+import { AdminAppBar } from "./AdminAppBar";
 
 export interface InCreationUser {
   first_name: string;
@@ -88,11 +95,16 @@ const CreateUser = () => {
 
 const UsersPage = () => {
   const query = useUsersIndex();
+  const [token, setToken] = useLocalStorage<string>("token");
+  const decodedToken = jwt_decode(token!) as any;
+  const userQuery = useUsersShow(decodedToken.user_id);
+  const user = userQuery?.data;
   const usersList = query?.data?.map((user: User) => {
     return <UserLigne user={user} key={user.id} />;
   });
   return (
     <div>
+      <AdminAppBar user={user} />
       <Table>
         <TableHeader>
           <TableRow>
@@ -110,6 +122,7 @@ const UsersPage = () => {
         <TableBody>{usersList}</TableBody>
       </Table>
       <CreateUser />
+      <AdminAppBar />
     </div>
   );
 };

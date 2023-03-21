@@ -1,12 +1,10 @@
 import { Table, TableBody, TableCell, TableHeader, TableRow } from "grommet";
-import { useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { useLocalStorage } from "react-use";
 import jwt_decode from "jwt-decode";
 import { ExistingArticle } from "../Articles/Article";
 import { useArticlesIndex } from "../Articles/hooks/useArticles";
 import { useUsersShow } from "../Articles/hooks/useUsers";
-import { DeleteButton, ModifyButton } from "../utils/Buttons";
+import { DeleteButton, ModifyButton } from "../utils/components/Buttons";
 import { AdminAppBar } from "./AdminAppBar";
 import UsersPage from "./UsersPage";
 
@@ -31,7 +29,6 @@ const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
 const AdminPage = () => {
   const [token, setToken] = useLocalStorage<string>("token");
   const decodedToken = jwt_decode(token!) as any;
-  console.log(decodedToken);
   const query = useArticlesIndex();
   const userQuery = useUsersShow(decodedToken.user_id);
   const user = userQuery?.data;
@@ -57,7 +54,6 @@ const AdminPage = () => {
         </TableHeader>
         <TableBody>{articleList}</TableBody>
       </Table>
-      <UsersPage />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { Favorite, Home, ShareOption } from "grommet-icons";
 import { AiFillDelete } from "react-icons/ai";
 import { BsFillPencilFill } from "react-icons/bs";
 import { useLocalStorage } from "react-use";
-import { useArticleDelete } from "../Articles/hooks/useArticles";
+import { useArticleDelete } from "../../Articles/hooks/useArticles";
 
 export const LikeButton = () => {
   return (

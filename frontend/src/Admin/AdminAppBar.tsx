@@ -1,5 +1,5 @@
 import { Heading, Grommet, Button, Menu } from "grommet";
-import { AppBar } from "../utils/AppBar";
+import { AppBar } from "../utils/components/AppBar";
 
 const AdminTheme = {
   global: {
@@ -35,6 +35,12 @@ export const AdminAppBar = (user: any) => {
               label: "Public",
               onClick: () => {
                 window.location.href = "http://localhost:3001/";
+              },
+            },
+            {
+              label: "Users",
+              onClick: () => {
+                window.location.href = "http://localhost:3001/admin/users";
               },
             },
           ]}
