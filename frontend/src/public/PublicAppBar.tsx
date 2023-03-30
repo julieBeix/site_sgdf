@@ -1,4 +1,5 @@
 import { Heading, Grommet, Button, Menu } from "grommet";
+import { useLocalStorage } from "react-use";
 import { AppBar } from "../utils/components/AppBar";
 
 const PublicTheme = {
@@ -15,6 +16,40 @@ const PublicTheme = {
 };
 
 export const PublicAppBar = () => {
+  const [token, setToken, clearToken] = useLocalStorage("token", false);
+  const loggedIn = token && token != null;
+  const itemList = [
+    {
+      label: "Articles",
+      onClick: () => {
+        window.location.href = "http://localhost:3001/articles";
+      },
+    },
+  ];
+  if (loggedIn) {
+    itemList.push(
+      {
+        label: "Admin",
+        onClick: () => {
+          window.location.href = "http://localhost:3001/admin";
+        },
+      },
+      {
+        label: "Disconnect",
+        onClick: () => {
+          clearToken();
+          window.location.href = "http://localhost:3001/connection";
+        },
+      }
+    );
+  } else {
+    itemList.push({
+      label: "Connection",
+      onClick: () => {
+        window.location.href = "http://localhost:3001/connection";
+      },
+    });
+  }
   return (
     <Grommet theme={PublicTheme}>
       <AppBar>
@@ -27,23 +62,7 @@ export const PublicAppBar = () => {
             Groupe Scouts et Guides de France d'Eaubonne
           </Button>
         </Heading>
-        <Menu
-          label="Menu"
-          items={[
-            {
-              label: "Articles",
-              onClick: () => {
-                window.location.href = "http://localhost:3001/articles";
-              },
-            },
-            {
-              label: "Connection",
-              onClick: () => {
-                window.location.href = "http://localhost:3001/connection";
-              },
-            },
-          ]}
-        />
+        <Menu label="Menu" items={itemList} />
       </AppBar>
     </Grommet>
   );

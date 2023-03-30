@@ -1,6 +1,6 @@
 export enum Role {
-  MEMBER,
-  ADMIN,
+  MEMBER = 1,
+  ADMIN = 2,
 }
 
 export const getUserRole = (role: string) => {

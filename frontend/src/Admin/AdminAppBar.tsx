@@ -46,7 +46,7 @@ export const AdminAppBar = (user: any) => {
               },
             },
             {
-              label: "Deconnect",
+              label: "Disconnect",
               onClick: () => {
                 window.location.href = "http://localhost:3001/";
                 clearToken();
