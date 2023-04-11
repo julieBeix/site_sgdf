@@ -33,7 +33,8 @@ export const useUsersIndex = () => useQuery(buildIndexQueryKey(), async () => {
      return useMutation((user : User) => updateUser(user, id, token), {
      onSuccess: () => {
        client.invalidateQueries(buildShowQueryKey(id));
-       window.location.href = usersUrl;
+       window.location.href = "http://localhost:3001/admin/users/"
+       ;
      },
    })};
 

@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { useLocalStorage } from "react-use";
 import { useUsersModify, useUsersShow } from "./useUsers";
 import { User } from "./User";
+import { Select } from "grommet";
+import { Role, roleList } from "../Admin/Role";
 
 const UserPage = () => {
   const { id } = useParams();
@@ -14,7 +16,7 @@ const UserPage = () => {
     email: "",
     pwd: "",
     id: "",
-    role: "",
+    role: "member",
   };
   const [value, setValue] = useState<User>(initialState);
   console.log(data);
@@ -53,7 +55,7 @@ const UserPage = () => {
         <TextInput id="text-input-id" name="pwd" />
       </FormField>
       <FormField name="role" htmlFor="text-input-id" label="Role">
-        <TextInput id="text-input-id" name="role" />
+        <Select options={roleList} name="role" />
       </FormField>
       <Box direction="row" gap="medium">
         <Button type="submit" primary label="Submit" />
