@@ -3,8 +3,11 @@ import { useLocalStorage } from "react-use";
 import jwt_decode from "jwt-decode";
 import { ExistingArticle } from "../Articles/Article";
 import { useArticlesIndex } from "../Articles/hooks/useArticles";
-import { useUsersShow } from "../Articles/hooks/useUsers";
-import { DeleteButton, ModifyButton } from "../utils/components/Buttons";
+import { useUsersShow } from "../Users/useUsers";
+import {
+  DeleteArticleButton,
+  ModifyArticleButton,
+} from "../Articles/ArticlesButtons";
 import { AdminAppBar } from "./AdminAppBar";
 
 const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
@@ -16,10 +19,10 @@ const ArticleLigne = ({ article }: { article: ExistingArticle }) => {
       </TableCell>
       <TableCell>{article.author}</TableCell>
       <TableCell>
-        <DeleteButton id={article.id} />
+        <DeleteArticleButton id={article.id} />
       </TableCell>
       <TableCell>
-        <ModifyButton id={article.id} />
+        <ModifyArticleButton id={article.id} />
       </TableCell>
     </TableRow>
   );

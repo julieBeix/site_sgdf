@@ -11,7 +11,8 @@ import reportWebVitals from "./reportWebVitals";
 import { PublicHomePage } from "./public/PublicHomePage";
 import { Grommet } from "grommet";
 import { ConnectionPage } from "./public/ConnectionPage";
-import UsersPage from "./Admin/UsersPage";
+import UsersList from "./Users/UsersList";
+import UserPage from "./Users/UserPage";
 import { Role, getUserRole } from "./Admin/Role";
 import { CreateUser } from "./public/CreateUser";
 
@@ -51,7 +52,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin/users",
-    element: userRole >= Role.ADMIN ? <UsersPage /> : <ConnectionPage />,
+    element: userRole >= Role.ADMIN ? <UsersList /> : <ConnectionPage />,
+  },
+  {
+    path: "/admin/user/:id",
+    element: userRole >= Role.ADMIN ? <UserPage /> : <ConnectionPage />,
   },
 ]);
 

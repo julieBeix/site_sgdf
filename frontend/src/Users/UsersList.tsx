@@ -1,23 +1,12 @@
 import { Table, TableBody, TableCell, TableHeader, TableRow } from "grommet";
 import { useLocalStorage } from "react-use";
 import jwt_decode from "jwt-decode";
-import { useUsersIndex, useUsersShow } from "../Articles/hooks/useUsers";
-import { DeleteButton, ModifyButton } from "../utils/components/Buttons";
-import { AdminAppBar } from "./AdminAppBar";
+import { AdminAppBar } from "../Admin/AdminAppBar";
+import { useUsersIndex, useUsersShow } from "./useUsers";
+import { DeleteUserButton, ModifyUserButton } from "./UsersButtons";
+import { User } from "./User";
 
-export interface InCreationUser {
-  first_name: string;
-  last_name: string;
-  email: string;
-  pwd: string;
-}
-
-export interface User extends InCreationUser {
-  id: number;
-  role: string;
-}
-
-const UserLigne = ({ user }: { user: User }) => {
+const UserLine = ({ user }: { user: User }) => {
   return (
     <TableRow>
       <TableCell>{user.id}</TableCell>
@@ -26,23 +15,23 @@ const UserLigne = ({ user }: { user: User }) => {
       </TableCell>
       <TableCell>{user.role}</TableCell>
       <TableCell>
-        <DeleteButton id={user.id} />
+        <DeleteUserButton id={user.id} />
       </TableCell>
       <TableCell>
-        <ModifyButton id={user.id} />
+        <ModifyUserButton id={user.id} />
       </TableCell>
     </TableRow>
   );
 };
 
-const UsersPage = () => {
+const UsersList = () => {
   const query = useUsersIndex();
   const [token] = useLocalStorage<string>("token");
   const decodedToken = jwt_decode(token!) as any;
   const userQuery = useUsersShow(decodedToken.user_id);
   const user = userQuery?.data;
   const usersList = query?.data?.map((user: User) => {
-    return <UserLigne user={user} key={user.id} />;
+    return <UserLine user={user} key={user.id} />;
   });
   return (
     <div>
@@ -67,4 +56,4 @@ const UsersPage = () => {
   );
 };
 
-export default UsersPage;
+export default UsersList;

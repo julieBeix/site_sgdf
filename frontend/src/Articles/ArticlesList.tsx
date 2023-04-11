@@ -1,11 +1,8 @@
 import { Card, CardBody, CardFooter, CardHeader } from "grommet";
 import { ExistingArticle } from "./Article";
-import {
-  LikeButton,
-  ReadArticleButton,
-  ShareButton,
-} from "../utils/components/Buttons";
+import { LikeButton, ShareButton } from "../utils/components/Buttons";
 import { useArticlesIndex } from "./hooks/useArticles";
+import { ReadArticleButton } from "./ArticlesButtons";
 
 const ArticleCard = ({ article }: { article: ExistingArticle }) => {
   return (

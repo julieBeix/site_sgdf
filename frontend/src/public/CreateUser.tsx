@@ -8,9 +8,9 @@ import {
   TextInput,
 } from "grommet";
 import { useState } from "react";
-import { InCreationUser } from "../Admin/UsersPage";
-import { useAddUser } from "../Articles/hooks/useUsers";
+import { useAddUser } from "../Users/useUsers";
 import { PublicAppBar } from "./PublicAppBar";
+import { InCreationUser } from "../Users/User";
 
 export const CreateUser = () => {
   const initialState = {
